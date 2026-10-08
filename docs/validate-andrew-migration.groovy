@@ -73,7 +73,8 @@ walk = { Node node, int depth ->
                     def val = node.getProperty(prop).getString()
                     if (!val || !val.startsWith("/")) return
 
-                    if (val.toLowerCase().contains("andrew")) {
+                    if (val.toLowerCase().contains("andrew") &&
+                        (val.startsWith("/content/forms/af/") || val.startsWith("/content/dam/formsanddocuments/"))) {
                         staleRefs << [nodePath: node.path, prop: prop, val: val]
                         println "  STALE (andrew) [${prop}]"
                         println "    page node : ${node.path}"
