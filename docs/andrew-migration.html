@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrew Forms Migration</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --accent: #4f8ef7;
+    --accent2: #34d399;
+    --warn: #f59e0b;
+    --text: #e2e8f0;
+    --muted: #8892a4;
+    --code-bg: #13151f;
+    --tag-bg: #1e2235;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; padding: 40px 24px 80px; }
+  .page { max-width: 860px; margin: 0 auto; }
+
+  /* header */
+  .header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 40px; }
+  .header h1 { font-size: 28px; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+  .header p { color: var(--muted); margin-top: 6px; font-size: 14px; }
+  .badge { display: inline-block; background: var(--tag-bg); border: 1px solid var(--accent); color: var(--accent); font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-right: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge.green { border-color: var(--accent2); color: var(--accent2); }
+
+  /* section */
+  .section { margin-bottom: 44px; }
+  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  h2 { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+  p { color: var(--muted); margin-bottom: 12px; }
+  p strong { color: var(--text); }
+
+  /* problem box */
+  .problem { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--warn); border-radius: 8px; padding: 20px 24px; margin-bottom: 20px; }
+  .problem h3 { font-size: 14px; font-weight: 600; color: var(--warn); margin-bottom: 8px; }
+  .problem p { margin: 0; font-size: 14px; }
+
+  /* steps */
+  .steps { display: flex; flex-direction: column; gap: 14px; }
+  .step { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; display: flex; gap: 16px; align-items: flex-start; }
+  .step-num { background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step-num.green { background: var(--accent2); color: #0f1117; }
+  .step h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .step p { font-size: 13.5px; margin: 0; }
+
+  /* path examples */
+  .path-box { background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-family: 'Consolas', 'Courier New', monospace; font-size: 13px; line-height: 2; margin: 14px 0; }
+  .path-old { color: #f87171; }
+  .path-arrow { color: var(--muted); margin: 0 8px; }
+  .path-new { color: var(--accent2); }
+
+  /* scope table */
+  .scope-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-top: 4px; }
+  .scope-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; }
+  .scope-card .bu { font-size: 13px; font-weight: 600; color: #fff; }
+  .scope-card .note { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+  /* scripts */
+  .script-row { display: flex; gap: 14px; margin-top: 4px; }
+  .script-card { flex: 1; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; }
+  .script-card .name { font-family: 'Consolas', monospace; font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+  .script-card p { font-size: 13px; margin-bottom: 10px; }
+  .script-card ul { padding-left: 18px; }
+  .script-card li { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  .script-card li strong { color: var(--text); }
+
+  /* qa */
+  .qa-checks { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+  .qa-check { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; display: flex; gap: 12px; align-items: center; }
+  .check-icon { font-size: 18px; flex-shrink: 0; }
+  .qa-check h4 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 2px; }
+  .qa-check p { font-size: 13px; margin: 0; }
+
+  /* note */
+  .note-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; font-size: 13.5px; }
+  .note-box strong { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    .script-row { flex-direction: column; }
+    body { padding: 24px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div style="margin-bottom:12px">
+      <span class="badge green">Groovy Console</span>
+    </div>
+    <h1>Andrew Forms — Migration &amp; Cleanup</h1>
+    <p>Automated removal of legacy "andrew" folder hierarchy across SP Global BUs · AEM as Cloud Service</p>
+  </div>
+
+  <!-- PROBLEM -->
+  <div class="section">
+    <div class="section-title">Background</div>
+    <div class="problem">
+      <h3>The Problem</h3>
+      <p>Multiple BUs had Adaptive Forms and DAM assets nested inside folders whose name contained <strong>"andrew"</strong> (e.g. <code>energy/forms/andrew-en/form-list</code>). These were legacy staging folders that were never cleaned up. Pages across SP Global referenced these paths directly, making a simple folder delete unsafe.</p>
+    </div>
+    <p>The migration needed to be <strong>automated</strong> (nearly 100 page references), <strong>safe</strong> (dry-run first), and <strong>per-BU</strong> (dev cloud environment instability meant running one BU at a time).</p>
+  </div>
+
+  <!-- PATH EXAMPLE -->
+  <div class="section">
+    <div class="section-title">What Changed</div>
+    <h2>Form Location</h2>
+    <div class="path-box">
+      <div><span class="path-old">/content/dam/formsanddocuments/spglobal/energy/forms/andrew-en/contact-form</span></div>
+      <div style="padding-left:8px"><span class="path-arrow">↓</span></div>
+      <div><span class="path-new">/content/dam/formsanddocuments/spglobal/energy/contact-form</span></div>
+    </div>
+    <p style="margin-top:8px">Forms moved <strong>directly to the BU root</strong> — not just one level up. Both the <strong>AEM Forms AF tree</strong> (<code>/content/forms/af/</code>) and the <strong>DAM tree</strong> (<code>/content/dam/formsanddocuments/</code>) were updated. Pages only reference the DAM tree, so only DAM path refs needed rewriting.</p>
+  </div>
+
+  <!-- SCOPE -->
+  <div class="section">
+    <div class="section-title">Scope</div>
+    <h2>Business Units</h2>
+    <div class="scope-grid">
+      <div class="scope-card"><div class="bu">Corporate</div><div class="note">Included</div></div>
+      <div class="scope-card"><div class="bu">MI</div><div class="note">Included</div></div>
+      <div class="scope-card"><div class="bu">Ratings</div><div class="note">Included</div></div>
+      <div class="scope-card"><div class="bu">Energy</div><div class="note">Included</div></div>
+      <div class="scope-card"><div class="bu">Sustainable1</div><div class="note">Included</div></div>
+      <div class="scope-card" style="border-color:#ef444450"><div class="bu" style="color:#f87171">CI</div><div class="note">Excluded</div></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section">
+    <div class="section-title">How It Works</div>
+    <h2>Migration — 3 Steps</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Discovery</h3>
+          <p>Recursively walks both AF and DAM trees per BU. When a node with "andrew" in its name is found it distinguishes <strong>folders</strong> (has child form nodes) from <strong>forms</strong> (the node itself is the form, e.g. <code>andrew-test-form</code> in Corporate). Builds a move map: <code>old path → new path at BU root</code>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Move Forms</h3>
+          <p>Executes <code>session.move(src, dst)</code> for each discovered form. Skips if the destination already exists. Saves after all moves to keep the session consistent.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Delete Empty Folders + Update Refs</h3>
+          <p>Deletes andrew folders once emptied. Then does a <strong>manual JCR tree walk</strong> (no SQL2 query — avoids the 100k node traversal limit on AEM Cloud) over <code>/content/spglobal/{BU}</code> checking <code>formRef</code>, <code>formPath</code>, <code>guideContainerPath</code>, and <code>fileReference</code> properties. Rewrites any that pointed to an old DAM path.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <div class="section">
+    <div class="section-title">Scripts</div>
+    <div class="script-row">
+      <div class="script-card">
+        <div class="name">remove-andrew-folders.groovy</div>
+        <p>Main migration script. Set <code>TARGET_BU</code> and <code>DRY_RUN = true</code> first to preview, then flip to <code>false</code> to apply.</p>
+        <ul>
+          <li><strong>DRY_RUN</strong> — preview without saving</li>
+          <li><strong>TARGET_BU</strong> — run one BU at a time</li>
+          <li>Handles both AF + DAM trees</li>
+          <li>Smart folder vs. form detection</li>
+          <li>No JCR-SQL2 queries (no traversal limit)</li>
+        </ul>
+      </div>
+      <div class="script-card">
+        <div class="name">validate-andrew-migration.groovy</div>
+        <p>QA validation script. Read-only — no changes. Run after migration to confirm it's clean.</p>
+        <ul>
+          <li>Checks for surviving andrew nodes</li>
+          <li>Scans ~100 page refs for stale "andrew" paths</li>
+          <li>Prints <strong>PASS / FAIL</strong> summary</li>
+          <li>Lists exact node paths for any failures</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- QA -->
+  <div class="section">
+    <div class="section-title">QA Checklist</div>
+    <div class="qa-checks">
+      <div class="qa-check">
+        <div class="check-icon">📁</div>
+        <div>
+          <h4>No andrew folders remain</h4>
+          <p>Script scans AF + DAM trees — no node with "andrew" in its name should exist after migration.</p>
+        </div>
+      </div>
+      <div class="qa-check">
+        <div class="check-icon">🔗</div>
+        <div>
+          <h4>All ~100 page refs updated</h4>
+          <p>Validation script walks the full page tree and confirms zero <code>formRef / formPath / fileReference</code> values still contain "andrew".</p>
+        </div>
+      </div>
+      <div class="qa-check">
+        <div class="check-icon">✅</div>
+        <div>
+          <h4>11 forms accessible at new paths</h4>
+          <p>Manually verify each migrated form opens correctly in AEM Forms Manager at its new BU-root path.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTE -->
+  <div class="section">
+    <div class="note-box">
+      <strong>Why per-BU execution?</strong> AEM as Cloud Service dev environment returned intermittent errors on large-scope runs. Running one BU at a time via the <code>TARGET_BU</code> variable isolates failures and keeps each run fast and recoverable.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

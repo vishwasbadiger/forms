@@ -1,0 +1,2089 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=unicode">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="andrew-migration_files/filelist.xml">
+<link rel=Edit-Time-Data href="andrew-migration_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Andrew Forms Migration</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Vishwa Badiger</o:Author>
+  <o:LastAuthor>Vishwa Badiger</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2026-10-08T23:08:00Z</o:Created>
+  <o:LastSaved>2026-10-08T23:08:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1738</o:Words>
+  <o:Characters>9907</o:Characters>
+  <o:Lines>82</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>11622</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="andrew-migration_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="andrew-migration_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-IN</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+tr:nth-child(even) td { background: #f7fafc; }
+.CODE-BLOCK
+	{white-space: pre-wrap;}
+.qa-row td:first-child { font-weight: bold; width: 30pt; text-align: center; font-size: 13pt; }
+
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 33554432 134217728 0 1 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483165 302055407 262144 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-believe-normal-left:yes;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	border:none;
+	mso-border-bottom-alt:solid #1A3A6B 2.25pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 6.0pt 0cm;
+	font-size:22.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#1A3A6B;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#1A3A6B;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#2C5282;
+	font-weight:bold;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.subtitle, li.subtitle, div.subtitle
+	{mso-style-name:subtitle;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	margin-bottom:16.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#666666;}
+p.jira, li.jira, div.jira
+	{mso-style-name:jira;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EBF4FF;
+	border:none;
+	mso-border-alt:solid #BEE3F8 1.0pt;
+	padding:0cm;
+	mso-padding-alt:2.0pt 8.0pt 2.0pt 8.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#2B6CB0;
+	font-weight:bold;}
+p.box, li.box, div.box
+	{mso-style-name:box;
+	mso-style-unhide:no;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#F7FAFC;
+	border:none;
+	mso-border-alt:solid #CBD5E0 1.0pt;
+	padding:0cm;
+	mso-padding-alt:10.0pt 14.0pt 10.0pt 14.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.box-warn, li.box-warn, div.box-warn
+	{mso-style-name:box-warn;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#FFFBEB;
+	border:none;
+	mso-border-left-alt:solid #D97706 4.5pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.box-info, li.box-info, div.box-info
+	{mso-style-name:box-info;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EBF8FF;
+	border:none;
+	mso-border-left-alt:solid #3182CE 4.5pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.box-green, li.box-green, div.box-green
+	{mso-style-name:box-green;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#F0FFF4;
+	border:none;
+	mso-border-left-alt:solid #38A169 4.5pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.step-table, li.step-table, div.step-table
+	{mso-style-name:step-table;
+	mso-style-unhide:no;
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.step-num, li.step-num, div.step-num
+	{mso-style-name:step-num;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	background:#2B6CB0;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:white;
+	font-weight:bold;}
+p.step-body, li.step-body, div.step-body
+	{mso-style-name:step-body;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-bottom-alt:solid #E2E8F0 1.0pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 8.0pt 0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.code-block, li.code-block, div.code-block
+	{mso-style-name:code-block;
+	mso-style-unhide:no;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#1A202C;
+	word-break:break-all;
+	border:none;
+	mso-border-alt:solid #4A5568 1.0pt;
+	padding:0cm;
+	mso-padding-alt:12.0pt 12.0pt 12.0pt 12.0pt;
+	font-size:8.5pt;
+	font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#E2E8F0;}
+p.code-label, li.code-label, div.code-label
+	{mso-style-name:code-label;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EDF2F7;
+	border:none;
+	mso-border-top-alt:solid #CBD5E0 1.0pt;
+	mso-border-left-alt:solid #CBD5E0 1.0pt;
+	mso-border-right-alt:solid #CBD5E0 1.0pt;
+	padding:0cm;
+	mso-padding-alt:4.0pt 10.0pt 0cm 10.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#2D3748;
+	font-weight:bold;}
+p.path-old, li.path-old, div.path-old
+	{mso-style-name:path-old;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:9.5pt;
+	font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#C53030;}
+p.path-new, li.path-new, div.path-new
+	{mso-style-name:path-new;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:9.5pt;
+	font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	color:#276749;}
+p.mono, li.mono, div.mono
+	{mso-style-name:mono;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EDF2F7;
+	font-size:9.5pt;
+	font-family:Consolas;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+span.jira1
+	{mso-style-name:jira1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	color:#2B6CB0;
+	border:solid #BEE3F8 1.0pt;
+	padding:2.0pt;
+	background:#EBF4FF;
+	font-weight:bold;}
+span.mono1
+	{mso-style-name:mono1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.5pt;
+	mso-bidi-font-size:9.5pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#EDF2F7;}
+span.path-old1
+	{mso-style-name:path-old1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.5pt;
+	mso-bidi-font-size:9.5pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#C53030;}
+span.path-new1
+	{mso-style-name:path-new1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.5pt;
+	mso-bidi-font-size:9.5pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#276749;}
+span.code-label1
+	{mso-style-name:code-label1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	color:#2D3748;
+	mso-hide:none;
+	border:solid #CBD5E0 1.0pt;
+	padding:4.0pt;
+	background:#EDF2F7;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><![if mso 9]>
+<style>
+p.MsoNormal
+	{margin-left:72.0pt;}
+</style>
+<![endif]>
+<meta charset=UTF-8>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-IN style='tab-interval:36.0pt;word-wrap:break-word;margin-left:
+72.0pt;margin-top:72.0pt;margin-right:72.0pt;margin-bottom:72.0pt'>
+
+<div class=WordSection1>
+
+<p class=subtitle style='margin-top:4.0pt;margin-right:0cm;margin-bottom:16.0pt;
+margin-left:72.0pt'><span style='font-family:"Calibri",sans-serif'>AEM as Cloud
+Service ·&nbsp; Groovy Console<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #1A3A6B 2.25pt;
+padding:0cm 0cm 6.0pt 0cm'>
+
+<h1><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>Andrew
+Forms — Migration &amp; Cleanup<o:p></o:p></span></h1>
+
+</div>
+
+<p class=subtitle style='margin-top:4.0pt'><span style='font-family:"Calibri",sans-serif'>Automated
+removal of legacy &quot;<span class=SpellE>andrew</span>&quot; folder hierarchy
+across SP Global BUs<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- BACKGROUND -->1.
+Background &amp; Problem<o:p></o:p></span></h2>
+
+<div style='border:solid #CBD5E0 1.0pt;padding:10.0pt 14.0pt 10.0pt 14.0pt;
+margin-top:10.0pt;margin-bottom:10.0pt'>
+
+<p style='background:#F7FAFC'><strong><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;color:#1A1A1A'>Problem:</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>
+Multiple BUs had Adaptive Forms and DAM assets nested inside folders whose name
+contained <strong><span style='font-family:"Calibri",sans-serif'>&quot;<span
+class=SpellE>andrew</span>&quot;</span></strong> (e.g. </span><span
+class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:Calibri;
+color:#1A1A1A'>energy/forms/<span class=SpellE>andrew-en</span>/contact-form</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>).
+These were legacy staging folders never cleaned up. Pages across SP Global
+referenced these paths directly, making a simple folder delete unsafe.<o:p></o:p></span></p>
+
+</div>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>The
+migration needed to be <strong><span style='font-family:"Calibri",sans-serif'>automated</span></strong>
+(nearly <span class=GramE>100 page</span> references across the site), <strong><span
+style='font-family:"Calibri",sans-serif'>safe</span></strong> (dry-run mode
+before applying), and <strong><span style='font-family:"Calibri",sans-serif'>per-BU</span></strong>
+due to AEM Cloud dev environment instability on large-scope runs.<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- WHAT CHANGED -->2.
+What Changed<o:p></o:p></span></h2>
+
+<h3><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>Form
+Location — Before &amp; After<o:p></o:p></span></h3>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Before (old path)<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>After (new path)<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span class=path-old1><span style='font-size:9.5pt;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri'>/content/dam/<span
+  class=SpellE>formsanddocuments</span>/<span class=SpellE>spglobal</span>/</span></span><span
+  style='font-size:9.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:Calibri;color:#C53030'><br>
+  <span class=path-old1>energy/forms/<span class=SpellE>andrew-en</span>/contact-form</span></span><span
+  style='font-size:10.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span class=path-new1><span style='font-size:9.5pt;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri'>/content/dam/<span
+  class=SpellE>formsanddocuments</span>/<span class=SpellE>spglobal</span>/</span></span><span
+  style='font-size:9.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+  mso-bidi-font-family:Calibri;color:#276749'><br>
+  <span class=path-new1>energy/contact-form</span></span><span
+  style='font-size:10.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>Forms
+were moved <strong><span style='font-family:"Calibri",sans-serif'>directly to
+the BU root level</span></strong> — not just one level up. Both storage trees
+were updated:<o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Tree<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Path<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Purpose<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>AF
+  tree</span></strong><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span class=mono1><span style='font-size:9.5pt;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+  color:#1A1A1A'>/content/forms/<span class=SpellE>af</span>/<span
+  class=SpellE>spglobal</span>/</span></span><span style='font-size:10.0pt;
+  font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>AEM Forms Manager<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>DAM
+  tree</span></strong><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span class=mono1><span style='font-size:9.5pt;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+  color:#1A1A1A'>/content/dam/<span class=SpellE>formsanddocuments</span>/<span
+  class=SpellE>spglobal</span>/</span></span><span style='font-size:10.0pt;
+  font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>What pages reference<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>Page
+content references (</span><span class=SpellE><span class=mono1><span
+style='font-size:9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>formRef</span></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>, </span><span
+class=SpellE><span class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:
+Calibri;color:#1A1A1A'>formPath</span></span></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>, </span><span
+class=SpellE><span class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:
+Calibri;color:#1A1A1A'>guideContainerPath</span></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>, </span><span
+class=SpellE><span class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:
+Calibri;color:#1A1A1A'>fileReference</span></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>) were
+updated for DAM paths only, as pages never reference the AF tree directly.<o:p></o:p></span></p>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- SCOPE -->3.
+Scope<o:p></o:p></span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Business Unit<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Status<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Notes<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Corporate<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Included<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'></td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>MI<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Included<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'></td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Ratings<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Included<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'></td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Energy<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Included<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'></td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Sustainable1<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Included<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'></td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>CI<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>⛔</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'> Excluded<o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Out of scope<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- HOW IT WORKS -->4.
+How It Works — Migration Steps<o:p></o:p></span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=37 valign=top style='width:28.0pt;border:solid #CBD5E0 1.0pt;
+  background:#2B6CB0;padding:8.0pt 8.0pt 8.0pt 8.0pt'>
+  <p class=MsoNormal align=center style='margin-top:8.0pt;margin-right:0cm;
+  margin-bottom:8.0pt;margin-left:0cm;text-align:center'><b><span
+  style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:white'>1<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-bottom:solid #E2E8F0 1.0pt;
+  padding:8.0pt 12.0pt 8.0pt 12.0pt'>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-outline-level:4'><b><span
+  style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#2C5282'>Discovery<o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  color:#1A1A1A'>Recursively walks both AF and DAM trees per BU. When a node
+  with &quot;<span class=SpellE>andrew</span>&quot; in its name is found it
+  distinguishes <strong><span style='font-family:"Calibri",sans-serif'>folders</span></strong>
+  (has child form nodes → move the children) from <strong><span
+  style='font-family:"Calibri",sans-serif'>forms</span></strong> (the node
+  itself is the form, e.g. </span><span class=SpellE><span class=mono1><span
+  style='font-size:9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>andrew</span></span></span><span
+  class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:Calibri;
+  color:#1A1A1A'>-test-form</span></span><span style='font-size:10.0pt;
+  font-family:"Calibri",sans-serif;color:#1A1A1A'> → move the node). Builds a
+  move map of old path → new path at BU root.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=37 valign=top style='width:28.0pt;border:solid #CBD5E0 1.0pt;
+  background:#2B6CB0;padding:8.0pt 8.0pt 8.0pt 8.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:white'>2<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-bottom:solid #E2E8F0 1.0pt;
+  padding:8.0pt 12.0pt 8.0pt 12.0pt'>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-outline-level:4'><b><span
+  style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#2C5282'>Move Forms<o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  color:#1A1A1A'>Executes </span><span class=SpellE><span class=GramE><span
+  class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:Calibri;
+  color:#1A1A1A'>session.move</span></span></span></span><span class=mono1><span
+  style='font-size:9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>(<span
+  class=SpellE>src</span>, <span class=SpellE>dst</span>)</span></span><span
+  style='font-size:10.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'> for
+  each discovered form. Skips gracefully if destination already exists. Saves
+  to the JCR after all moves complete.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=37 valign=top style='width:28.0pt;border:solid #CBD5E0 1.0pt;
+  background:#2B6CB0;padding:8.0pt 8.0pt 8.0pt 8.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:white'>3<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-bottom:solid #E2E8F0 1.0pt;
+  padding:8.0pt 12.0pt 8.0pt 12.0pt'>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-outline-level:4'><b><span
+  style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#2C5282'>Delete Empty Andrew Folders<o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  color:#1A1A1A'>After forms are moved, <span class=SpellE>andrew</span>
+  folders are checked for remaining children. Empty folders are removed with </span><span
+  class=SpellE><span class=GramE><span class=mono1><span style='font-size:9.5pt;
+  mso-bidi-font-family:Calibri;color:#1A1A1A'>node.remove</span></span></span></span><span
+  class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:Calibri;
+  color:#1A1A1A'>()</span></span><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;color:#1A1A1A'>.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=37 valign=top style='width:28.0pt;border:solid #CBD5E0 1.0pt;
+  background:#2B6CB0;padding:8.0pt 8.0pt 8.0pt 8.0pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:white'>4<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-bottom:solid #E2E8F0 1.0pt;
+  padding:8.0pt 12.0pt 8.0pt 12.0pt'>
+  <p class=MsoNormal style='margin-bottom:4.0pt;mso-outline-level:4'><b><span
+  style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#2C5282'>Update Content References<o:p></o:p></span></b></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  color:#1A1A1A'>Does a <strong><span style='font-family:"Calibri",sans-serif'>manual
+  JCR tree walk</span></strong> (no SQL2 query — avoids the 100k node traversal
+  limit on AEM Cloud) over </span><span class=mono1><span style='font-size:
+  9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>/content/<span
+  class=SpellE>spglobal</span>/{BU}</span></span><span style='font-size:10.0pt;
+  font-family:"Calibri",sans-serif;color:#1A1A1A'>. Checks every node for the
+  known ref properties and rewrites any that pointed to old DAM paths.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:solid #CBD5E0 1.0pt;padding:10.0pt 14.0pt 10.0pt 14.0pt;
+margin-top:10.0pt;margin-bottom:10.0pt'>
+
+<p style='background:#F7FAFC'><strong><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;color:#1A1A1A'>Why per-BU execution?</span></strong><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'> AEM as
+Cloud Service dev environment returned intermittent errors on <span
+class=GramE>large-scope</span> runs. The </span><span class=mono1><span
+style='font-size:9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>TARGET_BU</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>
+variable lets you run one BU at a time, isolating failures and keeping each run
+fast and recoverable.<o:p></o:p></span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- QA -->5.
+QA &amp; Validation<o:p></o:p></span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>Check<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>What<o:p></o:p></span></b></p>
+  </td>
+  <td style='background:#2D3748;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><b><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:white'>How<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>&#128193;</span><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>No
+  <span class=SpellE>andrew</span> folders remain</span></strong><span
+  style='font-size:10.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-left:none;mso-border-left-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Validation script
+  scans AF + DAM trees. Zero nodes with &quot;<span class=SpellE>andrew</span>&quot;
+  in name should exist.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>&#128279;</span><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>~<span
+  class=GramE>100 page</span> refs updated</span></strong><span
+  style='font-size:10.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+  "Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Validation script
+  walks full page tree. Zero </span><span class=SpellE><span class=mono1><span
+  style='font-size:9.5pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+  Calibri;color:#1A1A1A'>formRef</span></span></span><span class=mono1><span
+  style='font-size:9.5pt;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+  Calibri;color:#1A1A1A'> / <span class=SpellE>formPath</span> / <span
+  class=SpellE>fileReference</span></span></span><span style='font-size:10.0pt;
+  font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+  color:#1A1A1A'> values should contain &quot;<span class=SpellE>andrew</span>&quot;.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td valign=top style='border:solid #CBD5E0 1.0pt;border-top:none;mso-border-top-alt:
+  solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Segoe UI Emoji",sans-serif;
+  mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Emoji";
+  color:#1A1A1A'>✅</span><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>11
+  forms accessible</span></strong><span style='font-size:10.0pt;font-family:
+  "Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";color:#1A1A1A'><o:p></o:p></span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CBD5E0 1.0pt;
+  border-right:solid #CBD5E0 1.0pt;mso-border-top-alt:solid #CBD5E0 1.0pt;
+  mso-border-left-alt:solid #CBD5E0 1.0pt;padding:6.0pt 10.0pt 6.0pt 10.0pt'>
+  <p class=MsoNormal style='margin-top:8.0pt;margin-right:0cm;margin-bottom:
+  14.0pt;margin-left:0cm'><span style='font-size:10.0pt;font-family:"Calibri",sans-serif;
+  mso-fareast-font-family:"Times New Roman";color:#1A1A1A'>Manually verify each
+  migrated <span class=SpellE>form</span> opens at its new BU-root path in AEM
+  Forms Manager.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='margin-top:20.0pt;margin-right:0cm;
+margin-bottom:20.0pt;margin-left:0cm;text-align:center'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#1A1A1A'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'><!-- SCRIPTS -->6.
+Scripts<o:p></o:p></span></h2>
+
+<h3><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.1
+&nbsp; remove-<span class=SpellE>andrew</span>-<span class=SpellE><span
+class=GramE>folders.groovy</span></span> — Migration Script<o:p></o:p></span></h3>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>Run
+via AEM Groovy Console. Set </span><span class=mono1><span style='font-size:
+9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>DRY_RUN = true</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'> first
+to preview all moves/deletes/ref-updates, then set to </span><span class=mono1><span
+style='font-size:9.5pt;mso-bidi-font-family:Calibri;color:#1A1A1A'>false</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'> to
+apply. Change </span><span class=mono1><span style='font-size:9.5pt;mso-bidi-font-family:
+Calibri;color:#1A1A1A'>TARGET_BU</span></span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;color:#1A1A1A'> for each BU.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=code-label1><span style='font-size:9.0pt;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>docs/remove-<span
+class=SpellE>andrew</span>-<span class=SpellE>folders.groovy</span></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#1A1A1A'> <o:p></o:p></span></p>
+
+<div style='border:solid #4A5568 1.0pt;padding:12.0pt 12.0pt 12.0pt 12.0pt;
+margin-top:10.0pt;margin-bottom:10.0pt'>
+
+<p class=MsoNormal style='background:#1A202C;word-break:break-all'><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'>import <span class=SpellE><span
+class=GramE>javax.jcr.Node</span></span> import <span class=SpellE><span
+class=GramE>javax.jcr.Session</span></span> //
+─────────────────────────────────────────────────────────────────────────────
+// Remove &quot;<span class=SpellE>andrew</span>&quot; folder hierarchy — JIRA
+ // // Scans BOTH storage trees: // /content/forms/<span class=SpellE>af</span>/<span
+class=SpellE>spglobal</span>/ — AEM Forms Manager tree // /content/dam/<span
+class=SpellE>formsanddocuments</span>/<span class=SpellE>spglobal</span>/ — DAM
+tree (what pages reference) // // Steps: // 1. Discover forms inside *<span
+class=SpellE>andrew</span>* folders // 2. Move each form to the BU root level
+// 3. Delete <span class=GramE>now-empty</span> <span class=SpellE>andrew</span>
+folders // 4. Update <span class=SpellE>formRef</span> / <span class=SpellE>formPath</span>
+/ etc. on pages (DAM paths only) // // Run with DRY_RUN = true first, read the
+discovery output, then flip <span class=GramE>to</span> false. //
+─────────────────────────────────────────────────────────────────────────────
+def DRY_RUN = true // ← set to false to apply // Set to one of:
+&quot;corporate&quot; | &quot;mi&quot; | &quot;ratings&quot; |
+&quot;energy&quot; | &quot;sustainable1&quot; | &quot;all&quot; def TARGET_BU =
+&quot;energy&quot; def ALL_BUS = [&quot;corporate&quot;, &quot;mi&quot;,
+&quot;ratings&quot;, &quot;energy&quot;, &quot;sustainable1&quot;] def
+ACTIVE_BUS = TARGET_BU == &quot;all<span class=GramE>&quot; ?</span> ALL_<span
+class=GramE>BUS :</span> [TARGET_BU] def AF_BU_ROOTS = <span class=SpellE>ACTIVE_BUS.collect</span>
+<span class=GramE>{ &quot;</span>/content/forms/<span class=SpellE>af</span>/<span
+class=SpellE>spglobal</span>/${it}<span class=GramE>&quot; }</span> def
+DAM_BU_ROOTS = <span class=SpellE>ACTIVE_BUS.collect</span> <span class=GramE>{
+&quot;</span>/content/dam/<span class=SpellE>formsanddocuments</span>/<span
+class=SpellE>spglobal</span>/${it}<span class=GramE>&quot; }</span> def
+REF_SEARCH_ROOT = (TARGET_BU == &quot;all&quot;<span class=GramE>) ?</span>
+&quot;/content/<span class=SpellE>spglobal</span>&quot; : &quot;/content/<span
+class=SpellE>spglobal</span>/${TARGET_BU}&quot; def FORM_MOVES = [:] as <span
+class=SpellE>LinkedHashMap</span> def ANDREW_FOLDERS = [] as <span
+class=SpellE>LinkedHashSet</span> def <span class=SpellE>findAndrewForms</span>
+<span class=SpellE>findAndrewForms</span> = { Node <span class=SpellE>parentNode</span>,
+int depth, String <span class=SpellE>buRoot</span> -&gt; if (depth &gt; 8)
+return <span class=SpellE>parentNode.nodes.each</span> { Node child -&gt; if (<span
+class=SpellE>child.name.toLowerCase</span>().contains(&quot;<span class=SpellE>andrew</span>&quot;))
+{ def <span class=SpellE>realChildren</span> = [] <span class=SpellE>child.nodes.each</span>
+{ Node <span class=SpellE>gc</span> -&gt; if (gc.name != &quot;<span
+class=SpellE>jcr:content</span>&quot;) <span class=SpellE>realChildren</span>
+&lt;&lt; <span class=SpellE>gc</span> } if (<span class=SpellE>realChildren</span>)
+{ ANDREW_FOLDERS &lt;&lt; <span class=SpellE>child.path</span> <span
+class=SpellE>realChildren.each</span> { Node form -&gt; FORM_MOVES[<span
+class=SpellE>form.path</span>] = <span class=SpellE>buRoot</span> +
+&quot;/&quot; + form.name } } else { FORM_MOVES[<span class=SpellE>child.path</span>]
+= <span class=SpellE>buRoot</span> + &quot;/&quot; + child.name } } else { <span
+class=SpellE>findAndrewForms</span>(child, depth + 1, <span class=SpellE>buRoot</span>)
+} } } <span class=SpellE>println</span> &quot;=== DISCOVERY ===\n&quot; (AF_BU_ROOTS
++ DAM_BU_ROOTS).each { <span class=SpellE>buRoot</span> -&gt; if (!<span
+class=SpellE>session.nodeExists</span>(<span class=SpellE>buRoot</span>)) { <span
+class=SpellE>println</span> &quot; NOT FOUND — skipping: ${<span class=SpellE>buRoot</span>}&quot;;
+return } <span class=SpellE>findAndrewForms</span>(<span class=SpellE>session.getNode</span>(<span
+class=SpellE>buRoot</span>), 0, <span class=SpellE>buRoot</span>) } if (<span
+class=SpellE>FORM_MOVES.isEmpty</span>()) { <span class=SpellE>println</span>
+&quot; No <span class=SpellE>andrew</span> forms found — nothing to do.&quot;;
+return } <span class=SpellE>println</span> &quot; Andrew folders : ${<span
+class=SpellE>ANDREW_FOLDERS.size</span>()}&quot; <span class=SpellE>ANDREW_FOLDERS.each</span>
+{ <span class=SpellE>println</span> &quot; ${it}&quot; } <span class=SpellE>println</span>
+&quot;\n Forms to move : ${<span class=SpellE>FORM_MOVES.size</span>()}&quot; <span
+class=SpellE>FORM_MOVES.each</span> { <span class=SpellE>src</span>, <span
+class=SpellE>dst</span> -&gt; <span class=SpellE>println</span> &quot; ${<span
+class=SpellE>src</span>}\n → ${<span class=SpellE>dst</span>}&quot; } def line
+= { <span class=SpellE>println</span> &quot;\n&quot; + (&quot;─&quot; * 72) +
+&quot;\n&quot; } line() <span class=SpellE>println</span> DRY_RUN ? &quot; </span><span
+style='font-size:8.5pt;font-family:"Segoe UI Symbol",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Segoe UI Symbol";color:#E2E8F0'>⚠</span><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'> DRY RUN — nothing will be
+saved&quot; : &quot; </span><span style='font-size:8.5pt;font-family:"Segoe UI Symbol",sans-serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Symbol";
+color:#E2E8F0'>✔</span><span style='font-size:8.5pt;font-family:Consolas;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+color:#E2E8F0'> LIVE RUN — changes WILL be written&quot; line() def moved = 0,
+skipped = 0, <span class=SpellE>notFound</span> = 0 // STEP 1: Move forms <span
+class=SpellE>println</span> &quot;[STEP 1] Moving forms\n&quot; <span
+class=SpellE>FORM_MOVES.each</span> { <span class=SpellE>src</span>, <span
+class=SpellE>dst</span> -&gt; if (!<span class=SpellE>session.nodeExists</span>(<span
+class=SpellE>src</span>)) { <span class=SpellE>println</span> &quot; NOT FOUND
+: ${<span class=SpellE>src</span>}&quot;; <span class=SpellE>notFound</span>++;
+return } if (<span class=SpellE>session.nodeExists</span>(<span class=SpellE>dst</span>))
+{ <span class=SpellE>println</span> &quot; DEST EXISTS: ${<span class=SpellE>src</span>}\n
+→ ${<span class=SpellE>dst</span>}&quot;; skipped++; return } if (!DRY_RUN) <span
+class=SpellE>session.move</span>(<span class=SpellE>src</span>, <span
+class=SpellE>dst</span>) <span class=SpellE>println</span> &quot; ${DRY_RUN ?
+'[DRY] MOVE ' : 'MOVED '}: ${<span class=SpellE>src</span>}\n → ${<span
+class=SpellE>dst</span>}&quot; moved++ } if (!DRY_RUN &amp;&amp; moved &gt; 0)
+{ <span class=SpellE>session.save</span>(); <span class=SpellE>println</span>
+&quot;\n Saved — ${moved} move(s) applied&quot; } // STEP 2: Delete empty <span
+class=SpellE>andrew</span> folders line() <span class=SpellE>println</span>
+&quot;[STEP 2] Deleting empty <span class=SpellE>andrew</span> folders\n&quot;
+def deleted = 0 <span class=SpellE>ANDREW_FOLDERS.each</span> { <span
+class=SpellE>folderPath</span> -&gt; if (!<span class=SpellE>session.nodeExists</span>(<span
+class=SpellE>folderPath</span>)) { <span class=SpellE>println</span> &quot; NOT
+FOUND : ${<span class=SpellE>folderPath</span>}&quot;; return } def folder = <span
+class=SpellE>session.getNode</span>(<span class=SpellE>folderPath</span>) def
+remaining = []; <span class=SpellE>folder.nodes.each</span> { child -&gt; if
+(child.name != &quot;<span class=SpellE>jcr:content</span>&quot;) remaining
+&lt;&lt; child.name } if (remaining) { <span class=SpellE>println</span> &quot;
+NOT EMPTY : ${<span class=SpellE>folderPath</span>} (${<span class=SpellE>remaining.join</span>(',
+')})&quot;; return } if (!DRY_RUN) <span class=SpellE>folder.remove</span>() <span
+class=SpellE>println</span> &quot; ${DRY_RUN ? '[DRY] DELETE' : 'DELETED '}: ${<span
+class=SpellE>folderPath</span>}&quot; deleted++ } if (!DRY_RUN &amp;&amp;
+deleted &gt; 0) { <span class=SpellE>session.save</span>(); <span class=SpellE>println</span>
+&quot;\n Saved — ${deleted} folder(s) removed&quot; } // STEP 3: Update content
+references line() <span class=SpellE>println</span> &quot;[STEP 3] Updating
+content references under ${REF_SEARCH_ROOT}\n&quot; def updated = 0 def
+DAM_MOVES = <span class=SpellE>FORM_MOVES.findAll</span> { <span class=SpellE>src</span>,
+<span class=SpellE>dst</span> -&gt; <span class=SpellE>src.startsWith</span>(&quot;/content/dam/&quot;)
+} def REF_PROPS = [&quot;<span class=SpellE>formRef</span>&quot;, &quot;<span
+class=SpellE>formPath</span>&quot;, &quot;<span class=SpellE>guideContainerPath</span>&quot;,
+&quot;<span class=SpellE>fileReference</span>&quot;] def walk <span
+class=SpellE>walk</span> = { Node <span class=SpellE>node</span>, int depth
+-&gt; if (depth &gt; 20) return try { <span class=SpellE>REF_PROPS.each</span>
+{ prop -&gt; try { if (<span class=SpellE>node.hasProperty</span>(prop)) { def <span
+class=SpellE>val</span> = <span class=SpellE>node.getProperty</span>(prop).<span
+class=SpellE>getString</span>() if (<span class=SpellE>DAM_MOVES.containsKey</span>(<span
+class=SpellE>val</span>)) { def <span class=SpellE>newPath</span> = DAM_MOVES[<span
+class=SpellE>val</span>] if (!DRY_RUN) <span class=SpellE>node.setProperty</span>(prop,
+<span class=SpellE>newPath</span>) <span class=SpellE>println</span> &quot;
+${DRY_RUN ? '[DRY] UPDATE' : 'UPDATED '} [${prop}] @ ${<span class=SpellE>node.path</span>}&quot;
+<span class=SpellE>println</span> &quot; ${<span class=SpellE>val</span>}\n →
+${<span class=SpellE>newPath</span>}&quot; updated++ } } } catch (Exception
+ignored) {} } <span class=SpellE>node.nodes.each</span> { child -&gt;
+walk(child, depth + 1) } } catch (Exception ignored) {} } if (<span
+class=SpellE>session.nodeExists</span>(REF_SEARCH_ROOT)) { <span class=SpellE>println</span>
+&quot; Walking ${REF_SEARCH_ROOT} — may take 30–60s...\n&quot; walk(<span
+class=SpellE>session.getNode</span>(REF_SEARCH_ROOT), 0) } else { <span
+class=SpellE>println</span> &quot; SEARCH ROOT NOT FOUND:
+${REF_SEARCH_ROOT}&quot; } if (!DRY_RUN &amp;&amp; updated &gt; 0) { <span
+class=SpellE>session.save</span>(); <span class=SpellE>println</span> &quot;\n
+Saved — ${updated} reference(s) updated&quot; } line() <span class=SpellE>println</span>
+&quot;SUMMARY&quot; <span class=SpellE>println</span> &quot; Forms moved :
+${moved}&quot; <span class=SpellE>println</span> &quot; Forms not found : ${<span
+class=SpellE>notFound</span>}&quot; <span class=SpellE>println</span> &quot;
+Destination already exists : ${skipped}&quot; <span class=SpellE>println</span>
+&quot; Andrew folders deleted : ${deleted}&quot; <span class=SpellE>println</span>
+&quot; Content refs updated : ${updated}&quot; if (DRY_RUN) <span class=SpellE>println</span>
+&quot;\n </span><span style='font-size:8.5pt;font-family:"Segoe UI Symbol",sans-serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Symbol";
+color:#E2E8F0'>⚠</span><span style='font-size:8.5pt;font-family:Consolas;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+color:#E2E8F0'> DRY RUN complete — set DRY_RUN = false to apply&quot; line()<o:p></o:p></span></p>
+
+</div>
+
+<h3><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.2
+&nbsp; validate-<span class=SpellE>andrew</span>-<span class=SpellE><span
+class=GramE>migration.groovy</span></span> — QA Validation Script<o:p></o:p></span></h3>
+
+<p><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1A1A1A'>Read-only
+script. No changes are made. Run after migration to confirm clean state. Prints
+<strong><span style='font-family:"Calibri",sans-serif'>PASS / FAIL</span></strong>
+summary with exact paths for any failures.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=code-label1><span style='font-size:9.0pt;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:"Times New Roman"'>docs/validate-<span
+class=SpellE>andrew</span>-<span class=SpellE>migration.groovy</span></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#1A1A1A'> <o:p></o:p></span></p>
+
+<div style='border:solid #4A5568 1.0pt;padding:12.0pt 12.0pt 12.0pt 12.0pt;
+margin-top:10.0pt;margin-bottom:10.0pt'>
+
+<p class=MsoNormal style='background:#1A202C;word-break:break-all'><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'>import <span class=SpellE><span
+class=GramE>javax.jcr.Node</span></span> //
+─────────────────────────────────────────────────────────────────────────────
+// QA Validation — post <span class=SpellE>andrew</span>-folder migration //
+READ-ONLY — no changes made to the repository. //
+─────────────────────────────────────────────────────────────────────────────
+def TARGET_BU = &quot;energy&quot; //
+&quot;corporate&quot;|&quot;mi&quot;|&quot;ratings&quot;|&quot;energy&quot;|&quot;sustainable1&quot;|&quot;all&quot;
+def ALL_BUS = [&quot;corporate&quot;, &quot;mi&quot;, &quot;ratings&quot;,
+&quot;energy&quot;, &quot;sustainable1&quot;] def ACTIVE_BUS = TARGET_BU ==
+&quot;all<span class=GramE>&quot; ?</span> ALL_<span class=GramE>BUS :</span>
+[TARGET_BU] def AF_BU_ROOTS = <span class=SpellE>ACTIVE_BUS.collect</span> <span
+class=GramE>{ &quot;</span>/content/forms/<span class=SpellE>af</span>/<span
+class=SpellE>spglobal</span>/${it}<span class=GramE>&quot; }</span> def
+DAM_BU_ROOTS = <span class=SpellE>ACTIVE_BUS.collect</span> <span class=GramE>{
+&quot;</span>/content/dam/<span class=SpellE>formsanddocuments</span>/<span
+class=SpellE>spglobal</span>/${it}<span class=GramE>&quot; }</span> def
+REF_SEARCH_ROOT = TARGET_BU == &quot;all<span class=GramE>&quot; ?</span>
+&quot;/content/<span class=SpellE>spglobal</span>&quot; : &quot;/content/<span
+class=SpellE>spglobal</span>/${TARGET_BU}&quot; def REF_PROPS = [&quot;<span
+class=SpellE>formRef</span>&quot;, &quot;<span class=SpellE>formPath</span>&quot;,
+&quot;<span class=SpellE>guideContainerPath</span>&quot;, &quot;<span
+class=SpellE>fileReference</span>&quot;] def <span class=SpellE>andrewNodes</span>
+= [] def <span class=SpellE>staleRefs</span> = [] def line = { <span
+class=SpellE>println</span> &quot;\n&quot; + (&quot;─&quot; * 72) +
+&quot;\n&quot; } // STEP 1: Check for surviving <span class=SpellE>andrew</span>
+nodes line() <span class=SpellE>println</span> &quot;[STEP 1] Scanning for
+remaining <span class=SpellE>andrew</span> nodes\n&quot; def <span
+class=SpellE>findAndrew</span> <span class=SpellE>findAndrew</span> = { Node n,
+int depth -&gt; if (depth &gt; 8) return try { <span class=SpellE>n.nodes.each</span>
+{ Node child -&gt; if (<span class=SpellE>child.name.toLowerCase</span>().contains(&quot;<span
+class=SpellE>andrew</span>&quot;)) { <span class=SpellE>andrewNodes</span>
+&lt;&lt; <span class=SpellE>child.path</span> <span class=SpellE>println</span>
+&quot; STILL EXISTS: ${<span class=SpellE>child.path</span>}&quot; } else { <span
+class=SpellE>findAndrew</span>(child, depth + 1) } } } catch (Exception
+ignored) {} } (AF_BU_ROOTS + DAM_BU_ROOTS).each { root -&gt; if (!<span
+class=SpellE>session.nodeExists</span>(root)) { <span class=SpellE>println</span>
+&quot; NOT FOUND — skipping: ${root}&quot;; return } <span class=SpellE>findAndrew</span>(<span
+class=SpellE>session.getNode</span>(root), 0) } if (<span class=SpellE>andrewNodes.isEmpty</span>())
+<span class=SpellE>println</span> &quot; </span><span style='font-size:8.5pt;
+font-family:"Segoe UI Symbol",sans-serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Segoe UI Symbol";color:#E2E8F0'>✓</span><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'> No <span class=SpellE>andrew</span>
+nodes found&quot; // STEP 2: Scan page tree for stale refs line() <span
+class=SpellE>println</span> &quot;[STEP 2] Scanning page refs under
+${REF_SEARCH_ROOT}\n&quot; def walk <span class=SpellE>walk</span> = { Node <span
+class=SpellE>node</span>, int depth -&gt; if (depth &gt; 20) return try { <span
+class=SpellE>REF_PROPS.each</span> { prop -&gt; try { if (<span class=SpellE>node.hasProperty</span>(prop))
+{ def <span class=SpellE>val</span> = <span class=SpellE>node.getProperty</span>(prop).<span
+class=SpellE>getString</span>() if (!<span class=SpellE>val</span> || !<span
+class=SpellE>val.startsWith</span>(&quot;/&quot;)) return if (<span
+class=SpellE>val.toLowerCase</span>().contains(&quot;<span class=SpellE>andrew</span>&quot;)
+&amp;&amp; (<span class=SpellE>val.startsWith</span>(&quot;/content/forms/<span
+class=SpellE>af</span>/&quot;) || <span class=SpellE>val.startsWith</span>(&quot;/content/dam/<span
+class=SpellE>formsanddocuments</span>/&quot;))) { <span class=SpellE>staleRefs</span>
+&lt;&lt; [<span class=SpellE>nodePath</span>: <span class=SpellE>node.path</span>,
+prop: prop, <span class=SpellE>val</span>: <span class=SpellE>val</span>] <span
+class=SpellE>println</span> &quot; STALE [${prop}] ${<span class=SpellE>node.path</span>}\n
+→ ${<span class=SpellE>val</span>}&quot; } } } catch (Exception ignored) {} } <span
+class=SpellE>node.nodes.each</span> { child -&gt; walk(child, depth + 1) } }
+catch (Exception ignored) {} } if (<span class=SpellE>session.nodeExists</span>(REF_SEARCH_ROOT))
+walk(<span class=SpellE>session.getNode</span>(REF_SEARCH_ROOT), 0) if (<span
+class=SpellE>staleRefs.isEmpty</span>()) <span class=SpellE>println</span>
+&quot; </span><span style='font-size:8.5pt;font-family:"Segoe UI Symbol",sans-serif;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:"Segoe UI Symbol";
+color:#E2E8F0'>✓</span><span style='font-size:8.5pt;font-family:Consolas;
+mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Calibri;
+color:#E2E8F0'> No stale refs found&quot; // Summary line() <span class=SpellE>println</span>
+&quot;QA VALIDATION SUMMARY (BU: ${TARGET_BU})\n&quot; <span class=SpellE>println</span>
+&quot; Andrew nodes still in repo : ${<span class=SpellE>andrewNodes.size</span>()}&quot;
+<span class=SpellE>println</span> &quot; Stale refs (→ <span class=SpellE>andrew</span>
+path) : ${<span class=SpellE>staleRefs.size</span>()}&quot; if (<span
+class=SpellE>andrewNodes.isEmpty</span>() &amp;&amp; <span class=SpellE>staleRefs.isEmpty</span>())
+{ <span class=SpellE>println</span> &quot;\n </span><span style='font-size:
+8.5pt;font-family:"Segoe UI Symbol",sans-serif;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Segoe UI Symbol";color:#E2E8F0'>✓</span><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'> PASS — migration complete for
+'${TARGET_BU}'&quot; } else { <span class=SpellE>println</span> &quot;\n </span><span
+style='font-size:8.5pt;font-family:"Segoe UI Symbol",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Segoe UI Symbol";color:#E2E8F0'>✗</span><span
+style='font-size:8.5pt;font-family:Consolas;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:Calibri;color:#E2E8F0'> FAIL — issues need attention&quot;
+if (!<span class=SpellE>staleRefs.isEmpty</span>()) { <span class=SpellE>println</span>
+&quot;\n Stale refs to fix:&quot; <span class=SpellE>staleRefs.each</span> { r
+-&gt; <span class=SpellE>println</span> &quot; [${<span class=SpellE>r.prop</span>}]
+${<span class=SpellE>r.nodePath</span>} → ${<span class=SpellE>r.val</span>}&quot;
+} } } line()<o:p></o:p></span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
