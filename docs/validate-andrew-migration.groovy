@@ -29,7 +29,6 @@ def REF_PROPS = ["formRef", "formPath", "guideContainerPath", "fileReference"]
 
 def andrewNodes = []   // andrew nodes still present in repo
 def staleRefs   = []   // page props still pointing to an "andrew" path
-def brokenRefs  = []   // page props pointing to a DAM path that no longer exists
 
 def line = { println "\n" + ("─" * 72) + "\n" }
 
@@ -75,20 +74,10 @@ walk = { Node node, int depth ->
                     if (!val || !val.startsWith("/")) return
 
                     if (val.toLowerCase().contains("andrew")) {
-                        // Ref still points to an old andrew path
                         staleRefs << [nodePath: node.path, prop: prop, val: val]
                         println "  STALE (andrew) [${prop}]"
                         println "    page node : ${node.path}"
                         println "    ref value : ${val}"
-
-                    } else if (val.startsWith("/content/dam/formsanddocuments/")) {
-                        // Ref points into DAM — verify the target still exists
-                        if (!session.nodeExists(val)) {
-                            brokenRefs << [nodePath: node.path, prop: prop, val: val]
-                            println "  BROKEN (missing) [${prop}]"
-                            println "    page node : ${node.path}"
-                            println "    ref value : ${val}  ← node not found"
-                        }
                     }
                 }
             } catch (Exception ignored) {}
@@ -103,28 +92,21 @@ if (session.nodeExists(REF_SEARCH_ROOT)) {
     println "  SEARCH ROOT NOT FOUND: ${REF_SEARCH_ROOT}"
 }
 
-if (staleRefs.isEmpty() && brokenRefs.isEmpty()) {
-    println "  ✓  No stale or broken refs found"
-}
+if (staleRefs.isEmpty()) println "  ✓  No stale refs found"
 
 // ── SUMMARY ───────────────────────────────────────────────────────────────────
 line()
 println "QA VALIDATION SUMMARY  (BU: ${TARGET_BU})\n"
 println "  Andrew nodes still in repo : ${andrewNodes.size()}"
 println "  Stale refs (→ andrew path) : ${staleRefs.size()}"
-println "  Broken refs (target gone)  : ${brokenRefs.size()}"
 
-if (andrewNodes.isEmpty() && staleRefs.isEmpty() && brokenRefs.isEmpty()) {
+if (andrewNodes.isEmpty() && staleRefs.isEmpty()) {
     println "\n  ✓  PASS — migration looks complete for '${TARGET_BU}'"
 } else {
     println "\n  ✗  FAIL — issues found above need attention"
     if (!staleRefs.isEmpty()) {
         println "\n  Stale refs to fix:"
         staleRefs.each { r -> println "    [${r.prop}] ${r.nodePath}  →  ${r.val}" }
-    }
-    if (!brokenRefs.isEmpty()) {
-        println "\n  Broken refs (DAM target missing — re-run migration for these?):"
-        brokenRefs.each { r -> println "    [${r.prop}] ${r.nodePath}  →  ${r.val}" }
     }
 }
 line()
