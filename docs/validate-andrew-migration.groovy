@@ -22,8 +22,9 @@ def ACTIVE_BUS = TARGET_BU == "all" ? ALL_BUS : [TARGET_BU]
 def AF_BU_ROOTS  = ACTIVE_BUS.collect { "/content/forms/af/spglobal/${it}" }
 def DAM_BU_ROOTS = ACTIVE_BUS.collect { "/content/dam/formsanddocuments/spglobal/${it}" }
 
-def REF_SEARCH_ROOT = TARGET_BU == "all" ? "/content/spglobal"
-                                         : "/content/spglobal/${TARGET_BU}"
+// Scan only the 5 in-scope BU page trees — catches cross-BU refs without touching other BUs
+def REF_SEARCH_ROOTS = ["corporate", "mi", "ratings", "energy", "sustainable1"]
+                           .collect { "/content/spglobal/${it}" }
 
 def REF_PROPS = ["formRef", "formPath", "guideContainerPath", "fileReference"]
 
@@ -60,7 +61,7 @@ if (andrewNodes.isEmpty()) println "  ✓  No andrew nodes found in AF or DAM tr
 
 // ── STEP 2: Walk page tree for stale / broken refs ───────────────────────────
 line()
-println "[STEP 2] Scanning page refs under ${REF_SEARCH_ROOT}\n"
+println "[STEP 2] Scanning page refs across 5 in-scope BUs\n"
 println "  (This may take 30–60s on large repos…)\n"
 
 def walk
@@ -87,10 +88,9 @@ walk = { Node node, int depth ->
     } catch (Exception ignored) {}
 }
 
-if (session.nodeExists(REF_SEARCH_ROOT)) {
-    walk(session.getNode(REF_SEARCH_ROOT), 0)
-} else {
-    println "  SEARCH ROOT NOT FOUND: ${REF_SEARCH_ROOT}"
+REF_SEARCH_ROOTS.each { root ->
+    if (!session.nodeExists(root)) { println "  NOT FOUND — skipping: ${root}"; return }
+    walk(session.getNode(root), 0)
 }
 
 if (staleRefs.isEmpty()) println "  ✓  No stale refs found"
