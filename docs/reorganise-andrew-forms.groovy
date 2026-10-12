@@ -33,10 +33,10 @@ def ALL_MOVES = [
     // ── CORPORATE ─────────────────────────────────────────────────────────────
     // andrew-test-form → test-form (remove "andrew" from name, stay at BU root)
     [ bu: "corporate", name: "test-form",
-      afOld:  "${AF}/corporate/andrew-test-form",
-      afNew:  "${AF}/corporate/test-form",
-      damOld: "${DAM}/corporate/andrew-test-form",
-      damNew: "${DAM}/corporate/test-form" ],
+      afOld:  "${AF}/corporate/form/andrew-test-form",
+      afNew:  "${AF}/corporate/form/test-form",
+      damOld: "${DAM}/corporate/form/andrew-test-form",
+      damNew: "${DAM}/corporate/form/test-form" ],
 
     // ── MI ────────────────────────────────────────────────────────────────────
     [ bu: "mi", name: "long-with-product-info-visible",

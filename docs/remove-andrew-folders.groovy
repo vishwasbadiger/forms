@@ -95,11 +95,11 @@ findAndrewForms = { Node parentNode, int depth, String buRoot ->
                     FORM_MOVES[form.path] = "${destBase}/${cleanName}"
                 }
             } else {
-                // Node itself IS the form (e.g. corporate/andrew-test-form)
-                // Strip "andrew-" prefix from form name
+                // Node itself IS the form (e.g. corporate/form/andrew-test-form)
+                // Rename in place — strip "andrew-" prefix, keep same parent folder
                 def cleanName = child.name.replaceFirst(/(?i)^andrew-/, '')
                 if (!cleanName) cleanName = child.name
-                FORM_MOVES[child.path] = "${destBase}/${cleanName}"
+                FORM_MOVES[child.path] = "${parentNode.path}/${cleanName}"
             }
         } else {
             findAndrewForms(child, depth + 1, buRoot)

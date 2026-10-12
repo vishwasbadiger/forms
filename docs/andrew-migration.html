@@ -6,86 +6,60 @@
 <title>Andrew Forms Migration</title>
 <style>
   :root {
-    --bg: #0f1117;
-    --surface: #1a1d27;
-    --border: #2a2d3a;
-    --accent: #4f8ef7;
-    --accent2: #34d399;
-    --warn: #f59e0b;
-    --text: #e2e8f0;
-    --muted: #8892a4;
-    --code-bg: #13151f;
-    --tag-bg: #1e2235;
+    --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+    --accent: #4f8ef7; --accent2: #34d399; --warn: #f59e0b;
+    --text: #e2e8f0; --muted: #8892a4; --code-bg: #13151f; --tag-bg: #1e2235;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; padding: 40px 24px 80px; }
-  .page { max-width: 860px; margin: 0 auto; }
-
-  /* header */
+  .page { max-width: 900px; margin: 0 auto; }
   .header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 40px; }
   .header h1 { font-size: 28px; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
   .header p { color: var(--muted); margin-top: 6px; font-size: 14px; }
   .badge { display: inline-block; background: var(--tag-bg); border: 1px solid var(--accent); color: var(--accent); font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-right: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
   .badge.green { border-color: var(--accent2); color: var(--accent2); }
-
-  /* section */
   .section { margin-bottom: 44px; }
   .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
   .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
   h2 { font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 12px; }
   p { color: var(--muted); margin-bottom: 12px; }
   p strong { color: var(--text); }
-
-  /* problem box */
   .problem { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--warn); border-radius: 8px; padding: 20px 24px; margin-bottom: 20px; }
   .problem h3 { font-size: 14px; font-weight: 600; color: var(--warn); margin-bottom: 8px; }
   .problem p { margin: 0; font-size: 14px; }
-
-  /* steps */
   .steps { display: flex; flex-direction: column; gap: 14px; }
   .step { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; display: flex; gap: 16px; align-items: flex-start; }
   .step-num { background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-  .step-num.green { background: var(--accent2); color: #0f1117; }
   .step h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 4px; }
   .step p { font-size: 13.5px; margin: 0; }
-
-  /* path examples */
-  .path-box { background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-family: 'Consolas', 'Courier New', monospace; font-size: 13px; line-height: 2; margin: 14px 0; }
-  .path-old { color: #f87171; }
-  .path-arrow { color: var(--muted); margin: 0 8px; }
-  .path-new { color: var(--accent2); }
-
-  /* scope table */
-  .scope-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-top: 4px; }
-  .scope-card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; }
-  .scope-card .bu { font-size: 13px; font-weight: 600; color: #fff; }
-  .scope-card .note { font-size: 12px; color: var(--muted); margin-top: 3px; }
-
-  /* scripts */
-  .script-row { display: flex; gap: 14px; margin-top: 4px; }
-  .script-card { flex: 1; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; }
-  .script-card .name { font-family: 'Consolas', monospace; font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
-  .script-card p { font-size: 13px; margin-bottom: 10px; }
-  .script-card ul { padding-left: 18px; }
-  .script-card li { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px 0; font-size: 13.5px; }
+  th { background: var(--surface); color: var(--accent); font-weight: 600; text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--muted); vertical-align: top; }
+  td strong { color: var(--text); }
+  td code { font-family: 'Consolas', monospace; font-size: 12px; color: var(--accent2); background: var(--code-bg); padding: 1px 5px; border-radius: 3px; }
+  .path-old { color: #f87171; font-family: 'Consolas', monospace; font-size: 12.5px; }
+  .path-new { color: var(--accent2); font-family: 'Consolas', monospace; font-size: 12.5px; }
+  .arrow { color: var(--muted); margin: 0 6px; }
+  .script-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+  .script-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; }
+  .script-card .name { font-family: 'Consolas', monospace; font-size: 12.5px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .script-card .tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-bottom: 8px; text-transform: uppercase; }
+  .tag-migration { background: #1e3a5f; color: #7eb3f7; }
+  .tag-fix { background: #1e3a2f; color: #6ee7b7; }
+  .tag-qa { background: #3a2a1e; color: #fbbf24; }
+  .tag-audit { background: #2a1e3a; color: #c084fc; }
+  .script-card p { font-size: 13px; margin-bottom: 8px; }
+  .script-card ul { padding-left: 16px; }
+  .script-card li { font-size: 13px; color: var(--muted); margin-bottom: 3px; }
   .script-card li strong { color: var(--text); }
-
-  /* qa */
   .qa-checks { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
-  .qa-check { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; display: flex; gap: 12px; align-items: center; }
-  .check-icon { font-size: 18px; flex-shrink: 0; }
+  .qa-check { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; display: flex; gap: 12px; align-items: flex-start; }
+  .check-icon { font-size: 18px; flex-shrink: 0; padding-top: 2px; }
   .qa-check h4 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 2px; }
   .qa-check p { font-size: 13px; margin: 0; }
-
-  /* note */
   .note-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; font-size: 13.5px; }
   .note-box strong { color: var(--accent); }
-
-  @media (max-width: 600px) {
-    .script-row { flex-direction: column; }
-    body { padding: 24px 16px 60px; }
-  }
+  @media (max-width: 640px) { .script-grid { grid-template-columns: 1fr; } body { padding: 24px 16px 60px; } }
 </style>
 </head>
 <body>
@@ -94,71 +68,111 @@
   <div class="header">
     <div style="margin-bottom:12px">
       <span class="badge green">Groovy Console</span>
+      <span class="badge">AEM Cloud</span>
     </div>
     <h1>Andrew Forms — Migration &amp; Cleanup</h1>
-    <p>Automated removal of legacy "andrew" folder hierarchy across SP Global BUs · AEM as Cloud Service</p>
+    <p>Automated removal and reorganisation of legacy "andrew" folder hierarchy across SP Global BUs</p>
   </div>
 
-  <!-- PROBLEM -->
+  <!-- BACKGROUND -->
   <div class="section">
     <div class="section-title">Background</div>
     <div class="problem">
       <h3>The Problem</h3>
-      <p>Multiple BUs had Adaptive Forms and DAM assets nested inside folders whose name contained <strong>"andrew"</strong> (e.g. <code>energy/forms/andrew-en/form-list</code>). These were legacy staging folders that were never cleaned up. Pages across SP Global referenced these paths directly, making a simple folder delete unsafe.</p>
+      <p>Multiple BUs had Adaptive Forms and DAM assets nested inside folders whose name contained <strong>"andrew"</strong> (e.g. <code style="font-family:monospace;color:#34d399;font-size:12px">energy/forms/andrew-ci-forms/contact-form</code>). These were legacy staging folders never cleaned up. Pages across SP Global referenced these paths directly, making a simple folder delete unsafe.</p>
     </div>
-    <p>The migration needed to be <strong>automated</strong> (nearly 100 page references), <strong>safe</strong> (dry-run first), and <strong>per-BU</strong> (dev cloud environment instability meant running one BU at a time).</p>
+    <p>The migration needed to be <strong>automated</strong> (nearly 100 page references), <strong>safe</strong> (dry-run first), and <strong>per-BU</strong> due to AEM Cloud dev environment instability on large-scope runs.</p>
   </div>
 
-  <!-- PATH EXAMPLE -->
+  <!-- WHAT CHANGED -->
   <div class="section">
-    <div class="section-title">What Changed</div>
-    <h2>Form Location</h2>
-    <div class="path-box">
-      <div><span class="path-old">/content/dam/formsanddocuments/spglobal/energy/forms/andrew-en/contact-form</span></div>
-      <div style="padding-left:8px"><span class="path-arrow">↓</span></div>
-      <div><span class="path-new">/content/dam/formsanddocuments/spglobal/energy/contact-form</span></div>
-    </div>
-    <p style="margin-top:8px">Forms moved <strong>directly to the BU root</strong> — not just one level up. Both the <strong>AEM Forms AF tree</strong> (<code>/content/forms/af/</code>) and the <strong>DAM tree</strong> (<code>/content/dam/formsanddocuments/</code>) were updated. Pages only reference the DAM tree, so only DAM path refs needed rewriting.</p>
+    <div class="section-title">What Changed — Destination Paths Per BU</div>
+    <table>
+      <tr><th>BU</th><th>Source (andrew path)</th><th>Destination</th><th>Name change</th></tr>
+      <tr>
+        <td><strong>corporate</strong></td>
+        <td><span class="path-old">corporate/andrew-test-form</span></td>
+        <td><span class="path-new">corporate/test-form</span></td>
+        <td>✅ stripped</td>
+      </tr>
+      <tr>
+        <td><strong>mi</strong></td>
+        <td><span class="path-old">mi/andrew-mi/[form]</span></td>
+        <td><span class="path-new">mi/forms/[form]</span></td>
+        <td>✅ if prefixed</td>
+      </tr>
+      <tr>
+        <td><strong>ratings</strong></td>
+        <td><span class="path-old">ratings/en/forms/andrew-forms/[form]</span></td>
+        <td><span class="path-new">ratings/en/forms/[form]</span></td>
+        <td>✅ if prefixed</td>
+      </tr>
+      <tr>
+        <td><strong>energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/[form]</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/[form]</span></td>
+        <td>✅ if prefixed</td>
+      </tr>
+      <tr>
+        <td><strong>ci</strong></td>
+        <td><span class="path-old">ci/forms/andrew-ci-forms/[form]</span></td>
+        <td><span class="path-new">ci/forms/ci-forms/[form]</span></td>
+        <td>✅ if prefixed</td>
+      </tr>
+      <tr>
+        <td><strong>sustainable1</strong></td>
+        <td><span class="path-old">sustainable1/andrew-xxx/[form]</span></td>
+        <td><span class="path-new">sustainable1/en/forms/[form]</span></td>
+        <td>✅ if prefixed</td>
+      </tr>
+    </table>
+    <p>Both storage trees are updated — <strong>AF tree</strong> (<code>/content/forms/af/spglobal/</code>) and <strong>DAM tree</strong> (<code>/content/dam/formsanddocuments/spglobal/</code>). Page refs (formRef, formPath, guideContainerPath, fileReference) are rewritten for DAM paths only, scanning all 5 in-scope BU page trees to catch cross-BU references. Intermediate folders (e.g. <code>ci-forms/</code>, <code>mi/forms/</code>) are auto-created if they don't exist.</p>
   </div>
 
   <!-- SCOPE -->
   <div class="section">
     <div class="section-title">Scope</div>
-    <h2>Business Units</h2>
-    <div class="scope-grid">
-      <div class="scope-card"><div class="bu">Corporate</div><div class="note">Included</div></div>
-      <div class="scope-card"><div class="bu">MI</div><div class="note">Included</div></div>
-      <div class="scope-card"><div class="bu">Ratings</div><div class="note">Included</div></div>
-      <div class="scope-card"><div class="bu">Energy</div><div class="note">Included</div></div>
-      <div class="scope-card"><div class="bu">Sustainable1</div><div class="note">Included</div></div>
-      <div class="scope-card" style="border-color:#ef444450"><div class="bu" style="color:#f87171">CI</div><div class="note">Excluded</div></div>
-    </div>
+    <table>
+      <tr><th>BU</th><th>Status</th><th>Notes</th></tr>
+      <tr><td><strong>Corporate</strong></td><td>✅ Included</td><td>Form renamed: andrew-test-form → test-form</td></tr>
+      <tr><td><strong>MI</strong></td><td>✅ Included</td><td>4 forms, andrew-mi → forms folder</td></tr>
+      <tr><td><strong>Ratings</strong></td><td>✅ Included</td><td>andrew-forms folder flattened into en/forms</td></tr>
+      <tr><td><strong>Energy</strong></td><td>✅ Included</td><td>andrew-ci-forms → ci-forms folder</td></tr>
+      <tr><td><strong>CI</strong></td><td>✅ Included</td><td>andrew-ci-forms → ci-forms folder</td></tr>
+      <tr><td><strong>Sustainable1</strong></td><td>✅ Included</td><td>andrew folder → en/forms</td></tr>
+    </table>
   </div>
 
   <!-- HOW IT WORKS -->
   <div class="section">
-    <div class="section-title">How It Works</div>
-    <h2>Migration — 3 Steps</h2>
+    <div class="section-title">How It Works — Migration Steps</div>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
         <div>
           <h3>Discovery</h3>
-          <p>Recursively walks both AF and DAM trees per BU. When a node with "andrew" in its name is found it distinguishes <strong>folders</strong> (has child form nodes) from <strong>forms</strong> (the node itself is the form, e.g. <code>andrew-test-form</code> in Corporate). Builds a move map: <code>old path → new path at BU root</code>.</p>
+          <p>Recursively walks both AF and DAM trees per BU. Distinguishes <strong>folders</strong> (andrew node has child forms) from <strong>forms</strong> (andrew node is itself the form). Strips <code>andrew-</code> prefix from form names. Builds a move map using BU-specific destination subfolders.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div>
           <h3>Move Forms</h3>
-          <p>Executes <code>session.move(src, dst)</code> for each discovered form. Skips if the destination already exists. Saves after all moves to keep the session consistent.</p>
+          <p>Creates any missing intermediate folders (<code>sling:Folder</code>), then executes <code>session.move(src, dst)</code> per form. Skips gracefully if destination already exists.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div>
-          <h3>Delete Empty Folders + Update Refs</h3>
-          <p>Deletes andrew folders once emptied. Then does a <strong>manual JCR tree walk</strong> (no SQL2 query — avoids the 100k node traversal limit on AEM Cloud) over <code>/content/spglobal/{BU}</code> checking <code>formRef</code>, <code>formPath</code>, <code>guideContainerPath</code>, and <code>fileReference</code> properties. Rewrites any that pointed to an old DAM path.</p>
+          <h3>Delete Empty Andrew Folders</h3>
+          <p>After forms are moved, andrew folders are checked for remaining children. Empty folders are removed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Update Content References</h3>
+          <p><strong>Manual JCR tree walk</strong> — no SQL2 query (avoids the 100k node traversal limit on AEM Cloud). Scans all <strong>5 in-scope BU page trees</strong> (not just the current BU) to catch cross-BU references. Rewrites DAM paths in <code>formRef</code>, <code>formPath</code>, <code>guideContainerPath</code>, <code>fileReference</code>.</p>
         </div>
       </div>
     </div>
@@ -167,26 +181,48 @@
   <!-- SCRIPTS -->
   <div class="section">
     <div class="section-title">Scripts</div>
-    <div class="script-row">
+    <div class="script-grid">
       <div class="script-card">
         <div class="name">remove-andrew-folders.groovy</div>
-        <p>Main migration script. Set <code>TARGET_BU</code> and <code>DRY_RUN = true</code> first to preview, then flip to <code>false</code> to apply.</p>
+        <div class="tag tag-migration">Migration · QA &amp; PROD</div>
+        <p>Main migration script for environments where andrew folder structure is still intact. Set <code>TARGET_BU</code> and run with <code>DRY_RUN = true</code> first.</p>
         <ul>
-          <li><strong>DRY_RUN</strong> — preview without saving</li>
-          <li><strong>TARGET_BU</strong> — run one BU at a time</li>
-          <li>Handles both AF + DAM trees</li>
-          <li>Smart folder vs. form detection</li>
+          <li><strong>Per-BU</strong> destination subfolder map</li>
+          <li><strong>Strips</strong> <code>andrew-</code> prefix from form names</li>
+          <li>Auto-creates intermediate folders</li>
+          <li>Scans all 5 BU page trees for cross-BU refs</li>
           <li>No JCR-SQL2 queries (no traversal limit)</li>
         </ul>
       </div>
       <div class="script-card">
-        <div class="name">validate-andrew-migration.groovy</div>
-        <p>QA validation script. Read-only — no changes. Run after migration to confirm it's clean.</p>
+        <div class="name">reorganise-andrew-forms.groovy</div>
+        <div class="tag tag-fix">Fix · Dev Only</div>
+        <p>One-time fix for dev environment where forms were incorrectly moved to BU root by the original script. Moves them to correct subfolders.</p>
         <ul>
-          <li>Checks for surviving andrew nodes</li>
-          <li>Scans ~100 page refs for stale "andrew" paths</li>
-          <li>Prints <strong>PASS / FAIL</strong> summary</li>
-          <li>Lists exact node paths for any failures</li>
+          <li>Explicit hardcoded move map (11 forms)</li>
+          <li>BUs: <strong>corporate, mi, ratings, energy</strong></li>
+          <li>Auto-creates missing destination folders</li>
+          <li>Updates refs across all 5 BU page trees</li>
+        </ul>
+      </div>
+      <div class="script-card">
+        <div class="name">validate-andrew-migration.groovy</div>
+        <div class="tag tag-qa">QA Validation</div>
+        <p>Read-only post-migration check. Run after each BU migration to confirm clean state.</p>
+        <ul>
+          <li>Checks for surviving andrew nodes in AF + DAM</li>
+          <li>Scans all 5 BU page trees for stale refs</li>
+          <li>Prints <strong>PASS / FAIL</strong> with exact paths</li>
+        </ul>
+      </div>
+      <div class="script-card">
+        <div class="name">audit-migrated-form-refs.groovy</div>
+        <div class="tag tag-audit">Audit · Log</div>
+        <p>Shows which pages currently reference each of the 11 migrated forms at their new paths. Download log for future reference.</p>
+        <ul>
+          <li>Checks both AF and DAM new paths</li>
+          <li>Groups results per BU → per form</li>
+          <li>BU-specific or run all at once</li>
         </ul>
       </div>
     </div>
@@ -200,30 +236,30 @@
         <div class="check-icon">📁</div>
         <div>
           <h4>No andrew folders remain</h4>
-          <p>Script scans AF + DAM trees — no node with "andrew" in its name should exist after migration.</p>
+          <p>Validation script scans AF + DAM trees — zero nodes with "andrew" in name should exist after migration.</p>
         </div>
       </div>
       <div class="qa-check">
         <div class="check-icon">🔗</div>
         <div>
           <h4>All ~100 page refs updated</h4>
-          <p>Validation script walks the full page tree and confirms zero <code>formRef / formPath / fileReference</code> values still contain "andrew".</p>
+          <p>Validation script walks all 5 BU page trees. Zero formRef/formPath/fileReference values should contain "andrew". Cross-BU refs (e.g. energy page → MI form) are included.</p>
         </div>
       </div>
       <div class="qa-check">
         <div class="check-icon">✅</div>
         <div>
           <h4>11 forms accessible at new paths</h4>
-          <p>Manually verify each migrated form opens correctly in AEM Forms Manager at its new BU-root path.</p>
+          <p>Audit script confirms which pages reference each form at its new correct path. Download log as evidence.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- NOTE -->
+  <!-- NOTES -->
   <div class="section">
     <div class="note-box">
-      <strong>Why per-BU execution?</strong> AEM as Cloud Service dev environment returned intermittent errors on large-scope runs. Running one BU at a time via the <code>TARGET_BU</code> variable isolates failures and keeps each run fast and recoverable.
+      <strong>Why per-BU execution?</strong> AEM Cloud dev environment returned intermittent errors on large-scope runs. The <code style="font-family:monospace;color:#34d399;font-size:12px">TARGET_BU</code> variable lets you run one BU at a time, isolating failures and keeping each run fast and recoverable. Set to <code style="font-family:monospace;color:#34d399;font-size:12px">"all"</code> for QA/PROD where the environment is stable.
     </div>
   </div>
 
