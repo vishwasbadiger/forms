@@ -152,6 +152,35 @@ FORM_MOVES.each { src, dst ->
     if (!DRY_RUN) {
         ensureParent(dst)
         session.move(src, dst)
+        // Update jcr:title — strip "Andrew " / "andrew-" from display title
+        try {
+            def movedNode = session.getNode(dst)
+            def jcrContent = movedNode.hasNode("jcr:content") ? movedNode.getNode("jcr:content") : null
+            if (jcrContent) {
+                ["jcr:title", "dc:title"].each { titleProp ->
+                    if (jcrContent.hasProperty(titleProp)) {
+                        def oldTitle = jcrContent.getProperty(titleProp).getString()
+                        def newTitle = oldTitle.replaceAll(/(?i)\bandrew[- ]/, '').trim()
+                        if (newTitle && newTitle != oldTitle) {
+                            jcrContent.setProperty(titleProp, newTitle)
+                            println "  TITLE UPDATED: '${oldTitle}' → '${newTitle}'"
+                        }
+                    }
+                    // Also check metadata node (DAM assets)
+                    if (jcrContent.hasNode("metadata")) {
+                        def meta = jcrContent.getNode("metadata")
+                        if (meta.hasProperty(titleProp)) {
+                            def oldTitle = meta.getProperty(titleProp).getString()
+                            def newTitle = oldTitle.replaceAll(/(?i)\bandrew[- ]/, '').trim()
+                            if (newTitle && newTitle != oldTitle) {
+                                meta.setProperty(titleProp, newTitle)
+                                println "  TITLE UPDATED (metadata): '${oldTitle}' → '${newTitle}'"
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) { println "  WARN: could not update title at ${dst}: ${e.message}" }
     }
     println "  ${DRY_RUN ? '[DRY] MOVE ' : 'MOVED      '}: ${src}\n               → ${dst}"
     moved++
