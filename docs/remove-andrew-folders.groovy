@@ -5,51 +5,80 @@ import javax.jcr.Session
 // Remove "andrew" folder hierarchy
 //
 // Scans BOTH storage trees:
-//   /content/forms/af/spglobal/         — AEM Forms Manager tree
+//   /content/forms/af/spglobal/             — AEM Forms Manager tree
 //   /content/dam/formsanddocuments/spglobal/ — DAM tree (what pages reference)
 //
-// Steps:
-//   1. Discover forms inside *andrew* folders (or nodes whose own name has "andrew")
-//   2. Move each form to the BU root level
-//   3. Delete now-empty andrew folders
-//   4. Update formRef / formPath / etc. on pages (DAM paths only)
+// Moves forms from andrew folders directly to their correct BU subfolders:
+//   mi      : mi/andrew-mi/[form]                   → mi/forms/[form]
+//   energy  : energy/forms/andrew-ci-forms/[form]   → energy/forms/ci-forms/[form]
+//   ratings : ratings/en/forms/andrew-forms/[form]  → ratings/en/forms/[form]
+//   corporate: corporate/andrew-test-form            → corporate/andrew-test-form (no change)
 //
-// Run with DRY_RUN = true first, read the discovery output, then flip to false.
+// Run with DRY_RUN = true first, read the output, then flip to false.
 // ─────────────────────────────────────────────────────────────────────────────
 
-def DRY_RUN    = true   // ← set to false to apply
+def DRY_RUN   = true   // ← set to false to apply
 
-// ── Target BU ─────────────────────────────────────────────────────────────────
-// Set to one of: "corporate" | "mi" | "ratings" | "energy" | "sustainable1" | "all"
-def TARGET_BU  = "energy"
+// Set to one of: "corporate" | "mi" | "ratings" | "energy" | "sustainable1" | "ci" | "all"
+def TARGET_BU = "energy"
+
 // ─────────────────────────────────────────────────────────────────────────────
 
-def ALL_BUS = ["corporate", "mi", "ratings", "energy", "sustainable1"]
+def ALL_BUS    = ["corporate", "mi", "ratings", "energy", "sustainable1", "ci"]
 def ACTIVE_BUS = TARGET_BU == "all" ? ALL_BUS : [TARGET_BU]
 
 def AF_BU_ROOTS  = ACTIVE_BUS.collect { "/content/forms/af/spglobal/${it}" }
 def DAM_BU_ROOTS = ACTIVE_BUS.collect { "/content/dam/formsanddocuments/spglobal/${it}" }
 
-// Scan only the 5 in-scope BU page trees — catches cross-BU refs without touching other BUs
+// Per-BU destination subfolder under buRoot.
+// null = move directly to buRoot
+// path = move into this subfolder under buRoot
+def BU_SUBFOLDER = [
+    "corporate":   null,             // corporate/test-form  (andrew- stripped from name)
+    "mi":          "forms",          // mi/forms/[form]
+    "ratings":     "en/forms",       // ratings/en/forms/[form]
+    "energy":      "forms/ci-forms", // energy/forms/ci-forms/[form]
+    "sustainable1": "en/forms",      // sustainable1/en/forms/[form]
+    "ci":          "forms/ci-forms", // ci/forms/ci-forms/[form]
+]
+
+// Page trees to scan for ref updates (all 5 in-scope BUs — cross-BU refs exist)
 def REF_SEARCH_ROOTS = ["corporate", "mi", "ratings", "energy", "sustainable1"]
                            .collect { "/content/spglobal/${it}" }
 
-// Component properties that store a form path (used in Step 3 tree walk)
-// "path" intentionally excluded — too generic, not a form reference property
+def REF_PROPS = ["formRef", "formPath", "guideContainerPath", "fileReference"]
 
-// ─────────────────────────────────────────────────────────────────────────────
-// DISCOVERY
 // ─────────────────────────────────────────────────────────────────────────────
 
 def FORM_MOVES     = [:] as LinkedHashMap   // old path → new path
-def ANDREW_FOLDERS = [] as LinkedHashSet    // folders to delete after moving their contents
+def ANDREW_FOLDERS = [] as LinkedHashSet    // folders to delete after moving
 
-// Walk the tree. When a node with "andrew" in its name is encountered:
-//   - If it has non-jcr:content children → it is a FOLDER; move its children to buRoot
-//   - If it has only jcr:content (or none) → it IS the form; move itself to buRoot
+// ─────────────────────────────────────────────────────────────────────────────
+// Helper: create missing intermediate folders
+// ─────────────────────────────────────────────────────────────────────────────
+def ensureParent
+ensureParent = { String childPath ->
+    def parentPath = childPath.substring(0, childPath.lastIndexOf('/'))
+    if (session.nodeExists(parentPath)) return
+    ensureParent(parentPath)
+    def parentName = parentPath.substring(parentPath.lastIndexOf('/') + 1)
+    def grandParent = parentPath.substring(0, parentPath.lastIndexOf('/'))
+    if (session.nodeExists(grandParent)) {
+        session.getNode(grandParent).addNode(parentName, "sling:Folder")
+        println "  CREATED folder: ${parentPath}"
+    }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Discovery: walk tree, find andrew folders/forms, build FORM_MOVES
+// ─────────────────────────────────────────────────────────────────────────────
 def findAndrewForms
 findAndrewForms = { Node parentNode, int depth, String buRoot ->
     if (depth > 8) return
+
+    def buName     = buRoot.split("/").last()
+    def subfolder  = BU_SUBFOLDER[buName]
+    def destBase   = (subfolder != null) ? "${buRoot}/${subfolder}" : buRoot
 
     parentNode.nodes.each { Node child ->
         if (child.name.toLowerCase().contains("andrew")) {
@@ -57,14 +86,20 @@ findAndrewForms = { Node parentNode, int depth, String buRoot ->
             child.nodes.each { Node gc -> if (gc.name != "jcr:content") realChildren << gc }
 
             if (realChildren) {
-                // Folder: move its contents up to BU root, schedule folder for deletion
+                // Folder containing forms — move each form to destBase
+                // Strip "andrew-" prefix from form name if present
                 ANDREW_FOLDERS << child.path
                 realChildren.each { Node form ->
-                    FORM_MOVES[form.path] = buRoot + "/" + form.name
+                    def cleanName = form.name.replaceFirst(/(?i)^andrew-/, '')
+                    if (!cleanName) cleanName = form.name
+                    FORM_MOVES[form.path] = "${destBase}/${cleanName}"
                 }
             } else {
-                // The node itself is the form (e.g. andrew-test-form)
-                FORM_MOVES[child.path] = buRoot + "/" + child.name
+                // Node itself IS the form (e.g. corporate/andrew-test-form)
+                // Strip "andrew-" prefix from form name
+                def cleanName = child.name.replaceFirst(/(?i)^andrew-/, '')
+                if (!cleanName) cleanName = child.name
+                FORM_MOVES[child.path] = "${destBase}/${cleanName}"
             }
         } else {
             findAndrewForms(child, depth + 1, buRoot)
@@ -93,11 +128,9 @@ println "\n  Forms to move        : ${FORM_MOVES.size()}"
 FORM_MOVES.each { src, dst -> println "    ${src}\n      → ${dst}" }
 
 def line = { println "\n" + ("─" * 72) + "\n" }
-
 line()
-println DRY_RUN
-    ? "  ⚠  DRY RUN — previewing only, nothing will be saved"
-    : "  ✔  LIVE RUN — changes WILL be written to the repository"
+println DRY_RUN ? "  ⚠  DRY RUN — previewing only, nothing will be saved"
+                : "  ✔  LIVE RUN — changes WILL be written to the repository"
 line()
 
 def moved = 0, skipped = 0, notFound = 0
@@ -116,7 +149,10 @@ FORM_MOVES.each { src, dst ->
         skipped++
         return
     }
-    if (!DRY_RUN) session.move(src, dst)
+    if (!DRY_RUN) {
+        ensureParent(dst)
+        session.move(src, dst)
+    }
     println "  ${DRY_RUN ? '[DRY] MOVE ' : 'MOVED      '}: ${src}\n               → ${dst}"
     moved++
 }
@@ -136,7 +172,7 @@ ANDREW_FOLDERS.each { folderPath ->
         println "  NOT FOUND  : ${folderPath}"
         return
     }
-    def folder = session.getNode(folderPath)
+    def folder    = session.getNode(folderPath)
     def remaining = []
     folder.nodes.each { child -> if (child.name != "jcr:content") remaining << child.name }
 
@@ -156,17 +192,13 @@ if (!DRY_RUN && deleted > 0) {
 
 // ── STEP 3: Update content references on pages ───────────────────────────────
 line()
-println "[STEP 3] Updating content references under ${REF_SEARCH_ROOT}\n"
+println "[STEP 3] Updating content references across 5 BU page trees\n"
 
 def updated = 0
 
-// Build a lookup of DAM old-paths only — these are what page components store
+// Only DAM paths — pages never reference AF paths
 def DAM_MOVES = FORM_MOVES.findAll { src, dst -> src.startsWith("/content/dam/") }
 
-def REF_PROPS = ["formRef", "formPath", "guideContainerPath", "fileReference"]
-
-// Manual tree walk — one pass over the page tree, no JCR query, no traversal limits.
-// Checks every node for any of the known ref properties and rewrites if matched.
 def walk
 walk = { Node node, int depth ->
     if (depth > 20) return
@@ -192,8 +224,9 @@ walk = { Node node, int depth ->
 
 REF_SEARCH_ROOTS.each { root ->
     if (!session.nodeExists(root)) { println "  NOT FOUND — skipping: ${root}"; return }
-    println "  Walking ${root}...\n"
+    println "  Walking ${root}..."
     walk(session.getNode(root), 0)
+    println ""
 }
 
 if (!DRY_RUN && updated > 0) {
@@ -212,7 +245,5 @@ println "  Forms not found            : ${notFound}"
 println "  Destination already exists : ${skipped}"
 println "  Andrew folders deleted     : ${deleted}"
 println "  Content refs updated       : ${updated}"
-if (DRY_RUN) {
-    println "\n  ⚠  DRY RUN complete — set DRY_RUN = false at the top to apply"
-}
+if (DRY_RUN) println "\n  ⚠  DRY RUN complete — set DRY_RUN = false at the top to apply"
 line()
