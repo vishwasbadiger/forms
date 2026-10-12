@@ -15,33 +15,44 @@ def TARGET_BU = "all"
 def ALL_FORMS = [
     // corporate
     [ bu: "corporate", name: "andrew-test-form",
-      newPath: "/content/dam/formsanddocuments/spglobal/corporate/andrew-test-form" ],
+      afPath:  "/content/forms/af/spglobal/corporate/andrew-test-form",
+      damPath: "/content/dam/formsanddocuments/spglobal/corporate/andrew-test-form" ],
 
     // mi
     [ bu: "mi", name: "long-with-product-info-visible",
-      newPath: "/content/dam/formsanddocuments/spglobal/mi/long-with-product-info-visible" ],
+      afPath:  "/content/forms/af/spglobal/mi/long-with-product-info-visible",
+      damPath: "/content/dam/formsanddocuments/spglobal/mi/long-with-product-info-visible" ],
     [ bu: "mi", name: "long-with-product-info-hidden",
-      newPath: "/content/dam/formsanddocuments/spglobal/mi/long-with-product-info-hidden" ],
+      afPath:  "/content/forms/af/spglobal/mi/long-with-product-info-hidden",
+      damPath: "/content/dam/formsanddocuments/spglobal/mi/long-with-product-info-hidden" ],
     [ bu: "mi", name: "short-newsletter",
-      newPath: "/content/dam/formsanddocuments/spglobal/mi/short-newsletter" ],
+      afPath:  "/content/forms/af/spglobal/mi/short-newsletter",
+      damPath: "/content/dam/formsanddocuments/spglobal/mi/short-newsletter" ],
     [ bu: "mi", name: "short-interest",
-      newPath: "/content/dam/formsanddocuments/spglobal/mi/short-interest" ],
+      afPath:  "/content/forms/af/spglobal/mi/short-interest",
+      damPath: "/content/dam/formsanddocuments/spglobal/mi/short-interest" ],
 
     // ratings
     [ bu: "ratings", name: "ratings-registration",
-      newPath: "/content/dam/formsanddocuments/spglobal/ratings/ratings-registration" ],
+      afPath:  "/content/forms/af/spglobal/ratings/ratings-registration",
+      damPath: "/content/dam/formsanddocuments/spglobal/ratings/ratings-registration" ],
 
     // energy
     [ bu: "energy", name: "contact-form",
-      newPath: "/content/dam/formsanddocuments/spglobal/energy/contact-form" ],
+      afPath:  "/content/forms/af/spglobal/energy/contact-form",
+      damPath: "/content/dam/formsanddocuments/spglobal/energy/contact-form" ],
     [ bu: "energy", name: "contact-sales-form",
-      newPath: "/content/dam/formsanddocuments/spglobal/energy/contact-sales-form" ],
+      afPath:  "/content/forms/af/spglobal/energy/contact-sales-form",
+      damPath: "/content/dam/formsanddocuments/spglobal/energy/contact-sales-form" ],
     [ bu: "energy", name: "user-form",
-      newPath: "/content/dam/formsanddocuments/spglobal/energy/user-form" ],
+      afPath:  "/content/forms/af/spglobal/energy/user-form",
+      damPath: "/content/dam/formsanddocuments/spglobal/energy/user-form" ],
     [ bu: "energy", name: "user-form-b",
-      newPath: "/content/dam/formsanddocuments/spglobal/energy/user-form-b" ],
+      afPath:  "/content/forms/af/spglobal/energy/user-form-b",
+      damPath: "/content/dam/formsanddocuments/spglobal/energy/user-form-b" ],
     [ bu: "energy", name: "subscription-form",
-      newPath: "/content/dam/formsanddocuments/spglobal/energy/subscription-form" ],
+      afPath:  "/content/forms/af/spglobal/energy/subscription-form",
+      damPath: "/content/dam/formsanddocuments/spglobal/energy/subscription-form" ],
 ]
 
 def ACTIVE_FORMS = (TARGET_BU == "all") ? ALL_FORMS : ALL_FORMS.findAll { it.bu == TARGET_BU }
@@ -55,11 +66,11 @@ def REF_PROPS = ["formRef", "formPath", "guideContainerPath", "fileReference"]
 // ─────────────────────────────────────────────────────────────────────────────
 
 def line = { println "\n" + ("─" * 80) + "\n" }
-def results = [:]   // newPath → [ [pageNode, prop], ... ]
-ACTIVE_FORMS.each { f -> results[f.newPath] = [] }
+def results = [:]   // path → [ [nodePath, prop], ... ]
+ACTIVE_FORMS.each { f -> results[f.afPath] = []; results[f.damPath] = [] }
 
-// Build a lookup set for fast matching
-def TARGET_PATHS = ACTIVE_FORMS.collect { it.newPath } as Set
+// Build a lookup set for fast matching (both AF and DAM paths)
+def TARGET_PATHS = (ACTIVE_FORMS.collect { it.afPath } + ACTIVE_FORMS.collect { it.damPath }) as Set
 
 def walk
 walk = { Node node, int depth ->
@@ -98,16 +109,17 @@ buGroups.each { bu, forms ->
     println "  BU: ${bu.toUpperCase()}\n"
 
     forms.each { form ->
-        def refs = results[form.newPath]
+        def afRefs  = results[form.afPath]
+        def damRefs = results[form.damPath]
+        def allRefs = afRefs + damRefs
         println "  Form  : ${form.name}"
-        println "  Path  : ${form.newPath}"
-        println "  Refs  : ${refs.size()}"
+        println "  AF    : ${form.afPath}"
+        println "  DAM   : ${form.damPath}"
+        println "  Refs  : ${allRefs.size()}"
 
-        if (refs) {
-            refs.each { r ->
-                println "    [${r.prop}]  ${r.nodePath}"
-                totalRefs++
-            }
+        if (allRefs) {
+            afRefs.each  { r -> println "    [AF ][${r.prop}]  ${r.nodePath}"; totalRefs++ }
+            damRefs.each { r -> println "    [DAM][${r.prop}]  ${r.nodePath}"; totalRefs++ }
         } else {
             println "    (no pages currently reference this form)"
         }
