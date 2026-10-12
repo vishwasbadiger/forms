@@ -150,37 +150,36 @@ FORM_MOVES.each { src, dst ->
         return
     }
     if (!DRY_RUN) {
-        ensureParent(dst)
-        session.move(src, dst)
-        // Update jcr:title — strip "Andrew " / "andrew-" from display title
+        // Update title BEFORE move — node is still accessible at src
         try {
-            def movedNode = session.getNode(dst)
-            def jcrContent = movedNode.hasNode("jcr:content") ? movedNode.getNode("jcr:content") : null
-            if (jcrContent) {
-                ["jcr:title", "dc:title"].each { titleProp ->
-                    if (jcrContent.hasProperty(titleProp)) {
-                        def oldTitle = jcrContent.getProperty(titleProp).getString()
-                        def newTitle = oldTitle.replaceAll(/(?i)\bandrew[- ]/, '').trim()
-                        if (newTitle && newTitle != oldTitle) {
-                            jcrContent.setProperty(titleProp, newTitle)
-                            println "  TITLE UPDATED: '${oldTitle}' → '${newTitle}'"
-                        }
+            def srcNode = session.getNode(src)
+            if (srcNode.hasNode("jcr:content")) {
+                def jcrContent = srcNode.getNode("jcr:content")
+                // AF tree: jcr:content/jcr:title
+                if (jcrContent.hasProperty("jcr:title")) {
+                    def old = jcrContent.getProperty("jcr:title").getString()
+                    def updated = old.replaceAll(/(?i)\bandrew[- ]/, '').trim()
+                    if (updated && updated != old) {
+                        jcrContent.setProperty("jcr:title", updated)
+                        println "  TITLE UPDATED: '${old}' → '${updated}'"
                     }
-                    // Also check metadata node (DAM assets)
-                    if (jcrContent.hasNode("metadata")) {
-                        def meta = jcrContent.getNode("metadata")
-                        if (meta.hasProperty(titleProp)) {
-                            def oldTitle = meta.getProperty(titleProp).getString()
-                            def newTitle = oldTitle.replaceAll(/(?i)\bandrew[- ]/, '').trim()
-                            if (newTitle && newTitle != oldTitle) {
-                                meta.setProperty(titleProp, newTitle)
-                                println "  TITLE UPDATED (metadata): '${oldTitle}' → '${newTitle}'"
-                            }
+                }
+                // DAM tree: jcr:content/metadata/dc:title
+                if (jcrContent.hasNode("metadata")) {
+                    def meta = jcrContent.getNode("metadata")
+                    if (meta.hasProperty("dc:title")) {
+                        def old = meta.getProperty("dc:title").getString()
+                        def updated = old.replaceAll(/(?i)\bandrew[- ]/, '').trim()
+                        if (updated && updated != old) {
+                            meta.setProperty("dc:title", updated)
+                            println "  TITLE UPDATED (metadata): '${old}' → '${updated}'"
                         }
                     }
                 }
             }
-        } catch (Exception e) { println "  WARN: could not update title at ${dst}: ${e.message}" }
+        } catch (Exception e) { println "  WARN: title update failed for ${src}: ${e.message}" }
+        ensureParent(dst)
+        session.move(src, dst)
     }
     println "  ${DRY_RUN ? '[DRY] MOVE ' : 'MOVED      '}: ${src}\n               → ${dst}"
     moved++
