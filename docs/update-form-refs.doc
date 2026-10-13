@@ -23,13 +23,13 @@
   hr{border:none;border-top:1pt solid #e2e8f0;margin:16pt 0}
 </style></head>
 <body>
-<p class="subtitle">AEM as Cloud Service &nbsp;·&nbsp; Groovy Console &nbsp;·&nbsp; PROD</p>
+<p class="subtitle">AEM as Cloud Service &nbsp;·&nbsp; Groovy Console</p>
 <h1>Update Form Refs</h1>
 <p class="subtitle">Updates page component form references from old andrew paths to correct subfolder paths. No form moves — refs only.</p>
 <hr>
 
 <h2>1. Purpose &amp; When to Use</h2>
-<div class="box-info"><h3>When to use</h3><p>After the forms package is deployed on QA / PROD, the forms are already at their correct new paths. However, pages may still have <span class="mono">formRef</span> / <span class="mono">formPath</span> / <span class="mono">guideContainerPath</span> / <span class="mono">fileReference</span> properties pointing to old andrew paths. This script updates those references — it does <b>not</b> move or touch any form nodes.</p></div>
+<div class="box-info"><h3>When to use</h3><p>The forms package contains all <b>9 migrated forms</b> (Corporate 1, MI 4, Ratings 1, Energy 5) at their correct new paths. After deploying the package, pages may still have <span class="mono">formRef</span> / <span class="mono">formPath</span> / <span class="mono">guideContainerPath</span> / <span class="mono">fileReference</span> properties pointing to old andrew paths. This script updates those references — it does <b>not</b> move or touch any form nodes.</p><p>Of the 9 forms, only <b>MI</b> and <b>Energy</b> forms have page refs that need updating. MI forms are referenced from an energy page and a corporate page (cross-BU). Corporate and Ratings forms have no page refs.</p></div>
 <div class="box-warn"><h3>Pre-requisite</h3><p>The forms package must be deployed <b>before</b> running this script. Forms must already exist at their new paths (<span class="mono">mi/forms/</span>, <span class="mono">energy/forms/ci-forms/</span>).</p></div>
 
 <hr>

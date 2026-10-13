@@ -54,7 +54,6 @@
   <div class="header">
     <div style="margin-bottom:10px">
       <span class="badge">Groovy Console</span>
-      <span class="badge warn">PROD</span>
       <span class="badge green">Ref Update Only</span>
     </div>
     <h1>Update Form Refs</h1>
@@ -66,11 +65,12 @@
     <div class="section-title">Purpose</div>
     <div class="box box-info">
       <h3>When to use this script</h3>
-      <p>After the forms package is deployed on an environment (QA / PROD), the forms are already at their correct new paths. However, pages may still have <code>formRef</code> / <code>formPath</code> / <code>guideContainerPath</code> / <code>fileReference</code> properties pointing to the old andrew paths. This script updates those references — it does <strong>not</strong> move or touch any form nodes.</p>
+      <p>The forms package contains all <strong>9 migrated forms</strong> (Corporate 1, MI 4, Ratings 1, Energy 5) at their correct new paths. After deploying the package, pages may still have <code>formRef</code> / <code>formPath</code> / <code>guideContainerPath</code> / <code>fileReference</code> properties pointing to old andrew paths. This script updates those references — it does <strong>not</strong> move or touch any form nodes.</p>
+      <p style="margin-top:8px">Of the 9 forms, only <strong>MI</strong> and <strong>Energy</strong> forms have page refs that need updating — MI forms are referenced from an energy page and a corporate page (cross-BU), energy forms are referenced from energy pages. Corporate and Ratings forms have no page refs.</p>
     </div>
     <div class="box box-warn">
       <h3>Pre-requisite</h3>
-      <p>The forms package must be deployed <strong>before</strong> running this script. Forms must already exist at their new paths (<code>mi/forms/</code>, <code>energy/forms/ci-forms/</code>) for the updated refs to point to valid nodes.</p>
+      <p>Deploy the forms package <strong>first</strong> so forms exist at their new paths (<code>mi/forms/</code> and <code>energy/forms/ci-forms/</code>) before running this script.</p>
     </div>
   </div>
 
@@ -125,7 +125,7 @@
         <td><span class="path-new">energy/forms/ci-forms/subscription-form</span></td>
       </tr>
     </table>
-    <p>All paths are under <code>/content/dam/formsanddocuments/spglobal/</code>. Pages in <strong>Corporate</strong> and <strong>Ratings</strong> have no refs to these forms — they are not scanned.</p>
+    <p>All paths are under <code>/content/dam/formsanddocuments/spglobal/</code>. Only MI and Energy form refs need updating. Corporate and Ratings forms have no page refs — not included in the script.</p>
   </div>
 
   <!-- SEARCH SCOPE -->
