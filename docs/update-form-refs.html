@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Form Refs</title>
+<style>
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --border: #2a2d3a;
+    --accent: #4f8ef7; --accent2: #34d399; --warn: #f59e0b;
+    --text: #e2e8f0; --muted: #8892a4; --code-bg: #13151f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; padding: 40px 24px 80px; }
+  .page { max-width: 860px; margin: 0 auto; }
+  .header { border-bottom: 1px solid var(--border); padding-bottom: 28px; margin-bottom: 40px; }
+  .header h1 { font-size: 26px; font-weight: 700; color: #fff; }
+  .header p { color: var(--muted); margin-top: 6px; font-size: 14px; }
+  .badge { display: inline-block; background: #1e2235; border: 1px solid var(--accent); color: var(--accent); font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 20px; margin-right: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge.green { border-color: var(--accent2); color: var(--accent2); }
+  .badge.warn { border-color: var(--warn); color: var(--warn); }
+  .section { margin-bottom: 40px; }
+  .section-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  h2 { font-size: 17px; font-weight: 600; color: #fff; margin-bottom: 10px; }
+  p { color: var(--muted); margin-bottom: 10px; }
+  p strong { color: var(--text); }
+  .box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; }
+  .box-warn { border-left: 3px solid var(--warn); }
+  .box-info { border-left: 3px solid var(--accent); }
+  .box-green { border-left: 3px solid var(--accent2); }
+  .box h3 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .box-warn h3 { color: var(--warn); }
+  .box-info h3 { color: var(--accent); }
+  .box-green h3 { color: var(--accent2); }
+  .box p { margin: 0; font-size: 13.5px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 16px 0; font-size: 13.5px; }
+  th { background: var(--surface); color: var(--accent); font-weight: 600; text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--muted); }
+  td strong { color: var(--text); }
+  code { font-family: 'Consolas', monospace; font-size: 12.5px; color: var(--accent2); background: var(--code-bg); padding: 1pt 5px; border-radius: 3px; }
+  .path-old { color: #f87171; font-family: 'Consolas', monospace; font-size: 12px; }
+  .path-new { color: var(--accent2); font-family: 'Consolas', monospace; font-size: 12px; }
+  .steps { display: flex; flex-direction: column; gap: 12px; }
+  .step { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; }
+  .step-num { background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 3px; }
+  .step p { font-size: 13px; margin: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div style="margin-bottom:10px">
+      <span class="badge">Groovy Console</span>
+      <span class="badge warn">PROD</span>
+      <span class="badge green">Ref Update Only</span>
+    </div>
+    <h1>Update Form Refs</h1>
+    <p>Updates page component form references from old andrew paths to correct subfolder paths — no form moves, refs only.</p>
+  </div>
+
+  <!-- PURPOSE -->
+  <div class="section">
+    <div class="section-title">Purpose</div>
+    <div class="box box-info">
+      <h3>When to use this script</h3>
+      <p>After the forms package is deployed on an environment (QA / PROD), the forms are already at their correct new paths. However, pages may still have <code>formRef</code> / <code>formPath</code> / <code>guideContainerPath</code> / <code>fileReference</code> properties pointing to the old andrew paths. This script updates those references — it does <strong>not</strong> move or touch any form nodes.</p>
+    </div>
+    <div class="box box-warn">
+      <h3>Pre-requisite</h3>
+      <p>The forms package must be deployed <strong>before</strong> running this script. Forms must already exist at their new paths (<code>mi/forms/</code>, <code>energy/forms/ci-forms/</code>) for the updated refs to point to valid nodes.</p>
+    </div>
+  </div>
+
+  <!-- PATH MAPPINGS -->
+  <div class="section">
+    <div class="section-title">Path Mappings</div>
+    <table>
+      <tr><th>BU</th><th>Old Path (andrew)</th><th>New Path</th></tr>
+      <tr>
+        <td><strong>MI</strong></td>
+        <td><span class="path-old">mi/andrew-mi/long-with-product-info-visible</span></td>
+        <td><span class="path-new">mi/forms/long-with-product-info-visible</span></td>
+      </tr>
+      <tr>
+        <td><strong>MI</strong></td>
+        <td><span class="path-old">mi/andrew-mi/long-with-product-info-hidden</span></td>
+        <td><span class="path-new">mi/forms/long-with-product-info-hidden</span></td>
+      </tr>
+      <tr>
+        <td><strong>MI</strong></td>
+        <td><span class="path-old">mi/andrew-mi/short-newsletter</span></td>
+        <td><span class="path-new">mi/forms/short-newsletter</span></td>
+      </tr>
+      <tr>
+        <td><strong>MI</strong></td>
+        <td><span class="path-old">mi/andrew-mi/short-interest</span></td>
+        <td><span class="path-new">mi/forms/short-interest</span></td>
+      </tr>
+      <tr>
+        <td><strong>Energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/contact-form</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/contact-form</span></td>
+      </tr>
+      <tr>
+        <td><strong>Energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/contact-sales-form</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/contact-sales-form</span></td>
+      </tr>
+      <tr>
+        <td><strong>Energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/user-form</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/user-form</span></td>
+      </tr>
+      <tr>
+        <td><strong>Energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/user-form-b</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/user-form-b</span></td>
+      </tr>
+      <tr>
+        <td><strong>Energy</strong></td>
+        <td><span class="path-old">energy/forms/andrew-ci-forms/subscription-form</span></td>
+        <td><span class="path-new">energy/forms/ci-forms/subscription-form</span></td>
+      </tr>
+    </table>
+    <p>All paths are under <code>/content/dam/formsanddocuments/spglobal/</code>. Pages in <strong>Corporate</strong> and <strong>Ratings</strong> have no refs to these forms — they are not scanned.</p>
+  </div>
+
+  <!-- SEARCH SCOPE -->
+  <div class="section">
+    <div class="section-title">Search Scope</div>
+    <table>
+      <tr><th>Page Tree</th><th>Why</th></tr>
+      <tr><td><code>/content/spglobal/energy</code></td><td>Has energy form refs + 1 MI visible form ref (cross-BU)</td></tr>
+      <tr><td><code>/content/spglobal/corporate</code></td><td>Has 1 MI hidden form ref (cross-BU)</td></tr>
+    </table>
+    <p>Properties checked: <code>formRef</code>, <code>formPath</code>, <code>guideContainerPath</code>, <code>fileReference</code></p>
+  </div>
+
+  <!-- HOW TO RUN -->
+  <div class="section">
+    <div class="section-title">How to Run</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Deploy the forms package</h3>
+          <p>Install the package containing the migrated forms at their new paths. Verify forms exist at <code>mi/forms/</code> and <code>energy/forms/ci-forms/</code> in AEM Forms Manager.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Dry run first</h3>
+          <p>Open Groovy Console → paste <code>update-form-refs.groovy</code> → set <code>DRY_RUN = true</code> → Run. Review all <code>[DRY] UPDATE</code> lines to confirm the correct refs are being updated.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Apply</h3>
+          <p>Set <code>DRY_RUN = false</code> → Run. The script walks the energy and corporate page trees, finds matching old refs, and updates them to new paths. Changes are saved automatically.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Validate</h3>
+          <p>Run <code>validate-andrew-migration.groovy</code> to confirm zero stale refs remain. Then run <code>audit-migrated-form-refs.groovy</code> to produce the final evidence log.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div class="section">
+    <div class="section-title">Technical Notes</div>
+    <div class="box">
+      <p><strong>Manual tree walk</strong> — no JCR-SQL2 queries. Avoids the 100k node traversal limit on AEM Cloud. Walks page node trees directly via JCR API.</p>
+    </div>
+    <div class="box">
+      <p><strong>String keys in REMAP</strong> — map keys use <code>+</code> concatenation (not <code>"${...}"</code> interpolation) to produce plain Java Strings. This is required because Groovy GString and String have different hash codes — using GString as map keys causes <code>containsKey()</code> to silently return <code>false</code> even when content matches.</p>
+    </div>
+    <div class="box">
+      <p><strong>Read-only in DRY_RUN mode</strong> — <code>node.setProperty()</code> is only called when <code>DRY_RUN = false</code>. All path output is printed in both modes.</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

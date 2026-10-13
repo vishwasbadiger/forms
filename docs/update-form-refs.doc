@@ -1,0 +1,75 @@
+﻿<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head><meta charset="UTF-8"><title>Update Form Refs</title>
+<style>
+  body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1a1a1a;margin:72pt 72pt 72pt 72pt}
+  h1{font-size:20pt;font-weight:bold;color:#1a3a6b;border-bottom:2pt solid #1a3a6b;padding-bottom:6pt;margin-bottom:4pt}
+  h2{font-size:13pt;font-weight:bold;color:#1a3a6b;margin-top:16pt;margin-bottom:5pt}
+  h3{font-size:11pt;font-weight:bold;color:#2c5282;margin-top:8pt;margin-bottom:3pt}
+  p{margin:3pt 0 7pt 0;line-height:1.5}
+  .subtitle{font-size:10pt;color:#666;margin-bottom:14pt}
+  .box-warn{border-left:4pt solid #d97706;background:#fffbeb;padding:8pt 12pt;margin:8pt 0}
+  .box-info{border-left:4pt solid #3182ce;background:#ebf8ff;padding:8pt 12pt;margin:8pt 0}
+  .box-green{border-left:4pt solid #38a169;background:#f0fff4;padding:8pt 12pt;margin:8pt 0}
+  .box{border:1pt solid #cbd5e0;background:#f7fafc;padding:8pt 12pt;margin:8pt 0}
+  table{border-collapse:collapse;width:100%;margin:6pt 0 12pt 0}
+  th{background:#2d3748;color:white;font-size:10pt;padding:5pt 10pt;text-align:left}
+  td{border:1pt solid #cbd5e0;padding:5pt 10pt;font-size:10pt;vertical-align:top}
+  tr:nth-child(even) td{background:#f7fafc}
+  .step-num{background:#2b6cb0;color:white;font-weight:bold;font-size:11pt;width:24pt;text-align:center;padding:6pt;vertical-align:top}
+  .step-body{padding:6pt 10pt;border-bottom:1pt solid #e2e8f0;vertical-align:top}
+  .mono{font-family:Consolas,'Courier New',monospace;font-size:9.5pt;background:#edf2f7;padding:1pt 4pt}
+  .path-old{color:#c53030;font-family:Consolas,monospace;font-size:9pt}
+  .path-new{color:#276749;font-family:Consolas,monospace;font-size:9pt}
+  hr{border:none;border-top:1pt solid #e2e8f0;margin:16pt 0}
+</style></head>
+<body>
+<p class="subtitle">AEM as Cloud Service &nbsp;·&nbsp; Groovy Console &nbsp;·&nbsp; PROD</p>
+<h1>Update Form Refs</h1>
+<p class="subtitle">Updates page component form references from old andrew paths to correct subfolder paths. No form moves — refs only.</p>
+<hr>
+
+<h2>1. Purpose &amp; When to Use</h2>
+<div class="box-info"><h3>When to use</h3><p>After the forms package is deployed on QA / PROD, the forms are already at their correct new paths. However, pages may still have <span class="mono">formRef</span> / <span class="mono">formPath</span> / <span class="mono">guideContainerPath</span> / <span class="mono">fileReference</span> properties pointing to old andrew paths. This script updates those references — it does <b>not</b> move or touch any form nodes.</p></div>
+<div class="box-warn"><h3>Pre-requisite</h3><p>The forms package must be deployed <b>before</b> running this script. Forms must already exist at their new paths (<span class="mono">mi/forms/</span>, <span class="mono">energy/forms/ci-forms/</span>).</p></div>
+
+<hr>
+<h2>2. Path Mappings</h2>
+<p>All paths are under <span class="mono">/content/dam/formsanddocuments/spglobal/</span></p>
+<table>
+  <tr><th>BU</th><th>Old Path (andrew)</th><th>New Path</th></tr>
+  <tr><td><b>MI</b></td><td><span class="path-old">mi/andrew-mi/long-with-product-info-visible</span></td><td><span class="path-new">mi/forms/long-with-product-info-visible</span></td></tr>
+  <tr><td><b>MI</b></td><td><span class="path-old">mi/andrew-mi/long-with-product-info-hidden</span></td><td><span class="path-new">mi/forms/long-with-product-info-hidden</span></td></tr>
+  <tr><td><b>MI</b></td><td><span class="path-old">mi/andrew-mi/short-newsletter</span></td><td><span class="path-new">mi/forms/short-newsletter</span></td></tr>
+  <tr><td><b>MI</b></td><td><span class="path-old">mi/andrew-mi/short-interest</span></td><td><span class="path-new">mi/forms/short-interest</span></td></tr>
+  <tr><td><b>Energy</b></td><td><span class="path-old">energy/forms/andrew-ci-forms/contact-form</span></td><td><span class="path-new">energy/forms/ci-forms/contact-form</span></td></tr>
+  <tr><td><b>Energy</b></td><td><span class="path-old">energy/forms/andrew-ci-forms/contact-sales-form</span></td><td><span class="path-new">energy/forms/ci-forms/contact-sales-form</span></td></tr>
+  <tr><td><b>Energy</b></td><td><span class="path-old">energy/forms/andrew-ci-forms/user-form</span></td><td><span class="path-new">energy/forms/ci-forms/user-form</span></td></tr>
+  <tr><td><b>Energy</b></td><td><span class="path-old">energy/forms/andrew-ci-forms/user-form-b</span></td><td><span class="path-new">energy/forms/ci-forms/user-form-b</span></td></tr>
+  <tr><td><b>Energy</b></td><td><span class="path-old">energy/forms/andrew-ci-forms/subscription-form</span></td><td><span class="path-new">energy/forms/ci-forms/subscription-form</span></td></tr>
+</table>
+<p><b>Note:</b> Corporate and Ratings pages have no refs to these forms — they are not scanned.</p>
+
+<hr>
+<h2>3. Search Scope</h2>
+<table>
+  <tr><th>Page Tree</th><th>Reason</th></tr>
+  <tr><td><span class="mono">/content/spglobal/energy</span></td><td>Has energy form refs + 1 cross-BU MI visible form ref</td></tr>
+  <tr><td><span class="mono">/content/spglobal/corporate</span></td><td>Has 1 cross-BU MI hidden form ref</td></tr>
+</table>
+<p><b>Properties checked:</b> <span class="mono">formRef</span>, <span class="mono">formPath</span>, <span class="mono">guideContainerPath</span>, <span class="mono">fileReference</span></p>
+
+<hr>
+<h2>4. How to Run</h2>
+<table>
+  <tr><td class="step-num">1</td><td class="step-body"><h3>Deploy forms package</h3><p>Install the package. Verify forms exist at <span class="mono">mi/forms/</span> and <span class="mono">energy/forms/ci-forms/</span> in AEM Forms Manager.</p></td></tr>
+  <tr><td class="step-num">2</td><td class="step-body"><h3>Dry run</h3><p>Open Groovy Console → paste script → set <span class="mono">DRY_RUN = true</span> → Run. Review all <span class="mono">[DRY] UPDATE</span> lines to confirm correct refs are found.</p></td></tr>
+  <tr><td class="step-num">3</td><td class="step-body"><h3>Apply</h3><p>Set <span class="mono">DRY_RUN = false</span> → Run. Script updates refs and saves. Output shows each updated node path, old value, and new value.</p></td></tr>
+  <tr><td class="step-num">4</td><td class="step-body"><h3>Validate</h3><p>Run <span class="mono">validate-andrew-migration.groovy</span> → confirm zero stale refs. Run <span class="mono">audit-migrated-form-refs.groovy</span> → download log as evidence.</p></td></tr>
+</table>
+
+<hr>
+<h2>5. Technical Notes</h2>
+<div class="box"><p><b>Manual tree walk</b> — no JCR-SQL2 queries. Avoids the 100k node traversal limit on AEM Cloud.</p></div>
+<div class="box"><p><b>String keys in REMAP</b> — map keys use <span class="mono">+</span> concatenation (not <span class="mono">"${...}"</span> interpolation). Groovy GString and String have different hash codes — GString keys cause <span class="mono">containsKey()</span> to silently return false even when content matches.</p></div>
+<div class="box"><p><b>Read-only in DRY_RUN</b> — <span class="mono">node.setProperty()</span> is only called when <span class="mono">DRY_RUN = false</span>. All path output prints in both modes.</p></div>
+</body></html>
