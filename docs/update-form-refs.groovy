@@ -29,20 +29,20 @@ def REMAP = [
     "${DAM}/mi/long-with-product-info-hidden" :
         "${DAM}/mi/forms/long-with-product-info-hidden",
 
-    // Energy — BU root → energy/forms/ci-forms/
-    "${DAM}/energy/contact-form" :
+    // Energy — energy/forms/ → energy/forms/ci-forms/
+    "${DAM}/energy/forms/contact-form" :
         "${DAM}/energy/forms/ci-forms/contact-form",
 
-    "${DAM}/energy/contact-sales-form" :
+    "${DAM}/energy/forms/contact-sales-form" :
         "${DAM}/energy/forms/ci-forms/contact-sales-form",
 
-    "${DAM}/energy/user-form" :
+    "${DAM}/energy/forms/user-form" :
         "${DAM}/energy/forms/ci-forms/user-form",
 
-    "${DAM}/energy/user-form-b" :
+    "${DAM}/energy/forms/user-form-b" :
         "${DAM}/energy/forms/ci-forms/user-form-b",
 
-    "${DAM}/energy/subscription-form" :
+    "${DAM}/energy/forms/subscription-form" :
         "${DAM}/energy/forms/ci-forms/subscription-form",
 ]
 
