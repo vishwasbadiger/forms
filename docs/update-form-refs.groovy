@@ -18,36 +18,35 @@ def DRY_RUN = true   // ← set to false to apply
 def DAM = "/content/dam/formsanddocuments/spglobal"
 
 // Original andrew DAM paths → new correct paths
+// NOTE: keys use + concatenation (not "${...}") to produce String not GString —
+// GString keys break Map.containsKey() when compared against String values from JCR.
 def REMAP = [
+    (DAM + "/mi/andrew-mi/long-with-product-info-visible") :
+        (DAM + "/mi/forms/long-with-product-info-visible"),
 
-    // MI — andrew-mi → forms/
-    "${DAM}/mi/andrew-mi/long-with-product-info-visible" :
-        "${DAM}/mi/forms/long-with-product-info-visible",
+    (DAM + "/mi/andrew-mi/long-with-product-info-hidden") :
+        (DAM + "/mi/forms/long-with-product-info-hidden"),
 
-    "${DAM}/mi/andrew-mi/long-with-product-info-hidden" :
-        "${DAM}/mi/forms/long-with-product-info-hidden",
+    (DAM + "/mi/andrew-mi/short-newsletter") :
+        (DAM + "/mi/forms/short-newsletter"),
 
-    "${DAM}/mi/andrew-mi/short-newsletter" :
-        "${DAM}/mi/forms/short-newsletter",
+    (DAM + "/mi/andrew-mi/short-interest") :
+        (DAM + "/mi/forms/short-interest"),
 
-    "${DAM}/mi/andrew-mi/short-interest" :
-        "${DAM}/mi/forms/short-interest",
+    (DAM + "/energy/forms/andrew-ci-forms/contact-form") :
+        (DAM + "/energy/forms/ci-forms/contact-form"),
 
-    // Energy — andrew-ci-forms → ci-forms
-    "${DAM}/energy/forms/andrew-ci-forms/contact-form" :
-        "${DAM}/energy/forms/ci-forms/contact-form",
+    (DAM + "/energy/forms/andrew-ci-forms/contact-sales-form") :
+        (DAM + "/energy/forms/ci-forms/contact-sales-form"),
 
-    "${DAM}/energy/forms/andrew-ci-forms/contact-sales-form" :
-        "${DAM}/energy/forms/ci-forms/contact-sales-form",
+    (DAM + "/energy/forms/andrew-ci-forms/user-form") :
+        (DAM + "/energy/forms/ci-forms/user-form"),
 
-    "${DAM}/energy/forms/andrew-ci-forms/user-form" :
-        "${DAM}/energy/forms/ci-forms/user-form",
+    (DAM + "/energy/forms/andrew-ci-forms/user-form-b") :
+        (DAM + "/energy/forms/ci-forms/user-form-b"),
 
-    "${DAM}/energy/forms/andrew-ci-forms/user-form-b" :
-        "${DAM}/energy/forms/ci-forms/user-form-b",
-
-    "${DAM}/energy/forms/andrew-ci-forms/subscription-form" :
-        "${DAM}/energy/forms/ci-forms/subscription-form",
+    (DAM + "/energy/forms/andrew-ci-forms/subscription-form") :
+        (DAM + "/energy/forms/ci-forms/subscription-form"),
 ]
 
 // Energy: has energy form refs + MI visible form ref
@@ -91,6 +90,9 @@ walk = { Node node, int depth ->
         node.nodes.each { child -> walk(child, depth + 1) }
     } catch (Exception ignored) {}
 }
+
+println "\nREMAP keys:"
+REMAP.each { k, v -> println "  [${k.class.simpleName}] '${k}'" }
 
 SEARCH_ROOTS.each { root ->
     if (!session.nodeExists(root)) { println "\n  NOT FOUND — skipping: ${root}"; return }
