@@ -4,49 +4,54 @@ import javax.jcr.Node
 // Update form refs — one-time run, no form moves
 //
 // Updates formRef / formPath / guideContainerPath / fileReference on pages
-// from old BU-root paths (previous migration) to correct subfolder paths.
+// from original andrew DAM paths to new correct subfolder paths.
 //
-// Refs per audit:
-//   MI    : 2  refs  (1 energy page, 1 corporate page)
-//   Energy: 221 refs (all under /content/spglobal/energy)
-//   short-newsletter / short-interest: 0 refs — skipped
+// MI    : andrew-mi/[form]            → mi/forms/[form]
+// Energy: forms/andrew-ci-forms/[form] → forms/ci-forms/[form]
 //
 // Manual tree walk — no JCR-SQL2 (avoids 100k traversal limit).
-// Scoped to energy + corporate only — that's where all refs are.
+// Searches all 5 in-scope BU page trees (cross-BU refs exist).
 // ─────────────────────────────────────────────────────────────────────────────
 
 def DRY_RUN = true   // ← set to false to apply
 
 def DAM = "/content/dam/formsanddocuments/spglobal"
 
-// Old path (BU root after previous migration) → New path (correct subfolder)
+// Original andrew DAM paths → new correct paths
 def REMAP = [
 
-    // MI — BU root → mi/forms/
-    "${DAM}/mi/long-with-product-info-visible" :
+    // MI — andrew-mi → forms/
+    "${DAM}/mi/andrew-mi/long-with-product-info-visible" :
         "${DAM}/mi/forms/long-with-product-info-visible",
 
-    "${DAM}/mi/long-with-product-info-hidden" :
+    "${DAM}/mi/andrew-mi/long-with-product-info-hidden" :
         "${DAM}/mi/forms/long-with-product-info-hidden",
 
-    // Energy — energy/forms/ → energy/forms/ci-forms/
-    "${DAM}/energy/forms/contact-form" :
+    "${DAM}/mi/andrew-mi/short-newsletter" :
+        "${DAM}/mi/forms/short-newsletter",
+
+    "${DAM}/mi/andrew-mi/short-interest" :
+        "${DAM}/mi/forms/short-interest",
+
+    // Energy — andrew-ci-forms → ci-forms
+    "${DAM}/energy/forms/andrew-ci-forms/contact-form" :
         "${DAM}/energy/forms/ci-forms/contact-form",
 
-    "${DAM}/energy/forms/contact-sales-form" :
+    "${DAM}/energy/forms/andrew-ci-forms/contact-sales-form" :
         "${DAM}/energy/forms/ci-forms/contact-sales-form",
 
-    "${DAM}/energy/forms/user-form" :
+    "${DAM}/energy/forms/andrew-ci-forms/user-form" :
         "${DAM}/energy/forms/ci-forms/user-form",
 
-    "${DAM}/energy/forms/user-form-b" :
+    "${DAM}/energy/forms/andrew-ci-forms/user-form-b" :
         "${DAM}/energy/forms/ci-forms/user-form-b",
 
-    "${DAM}/energy/forms/subscription-form" :
+    "${DAM}/energy/forms/andrew-ci-forms/subscription-form" :
         "${DAM}/energy/forms/ci-forms/subscription-form",
 ]
 
-// Scoped search roots — audit confirms refs only in energy + corporate
+// Energy: has energy form refs + MI visible form ref
+// Corporate: has MI hidden form ref
 def SEARCH_ROOTS = [
     "/content/spglobal/energy",
     "/content/spglobal/corporate",
